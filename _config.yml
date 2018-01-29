@@ -11,7 +11,7 @@ title:            Ecological Modeling @ Colby College
 tagline:          'A Jekyll theme'
 description:      'A course on mathematical, computational, and statistical ecology'
 url:              http://ecologistchris.github.io
-baseurl:          /
+baseurl:          http://ecologistchris.github.io
 
 author:
   name:           'Chris Moore'
