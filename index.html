@@ -1,18 +1,24 @@
 ---
-layout: default
+layout: index
+title: index
 ---
 
-<nav id='sidebar'>
-	{% include nav.html %}
-</nav>
+{% assign entries = site.entries | sort: "number" %}
+{% for entry in entries %}
+    {% if entry.title != 'index'%}
+        <section id="{{ entry.sectionid }}" class="{{ entry.sectionclass }}">
+            {% case entry.sectionclass %}
+                {% when 'h1' %}
+                    <h1>{{ entry.title }}</h1>
+                {% when 'h2' %}
+                    <h2>{{ entry.title }}</h2>
+                {% when 'h3' %}
+                    <h3>{{ entry.title }}</h3>
+                {% when 'h4' %}
+                    <h4>{{ entry.title }}</h4>
+            {% endcase %}
 
-<section id='content'>
-{% for post in site.posts %}
-  <article class='{{ post.type }}'>
-    <a name='{{ post.url }}' href='#{{ post.url }}'><h2>{% if post.type %}<code><b>{{ post.type }}</b> {{ post.path }}</code> {% endif %}{{ post.title }}</h2></a>
-    <section class='body'>
-      {{ post.content }}
-    </section>
-  </article>
+            {{ entry.content }}
+        </section>
+    {% endif %}
 {% endfor %}
-</section>
