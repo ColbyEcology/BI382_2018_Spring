@@ -5,13 +5,12 @@ highlighter:      rouge
 # Permalinks
 permalink:        pretty
 plugins: [jekyll-paginate, jekyll-gist]
-relative_permalinks: true
 
 # Setup
 title:            Ecological Modeling @ Colby College
 tagline:          'A Jekyll theme'
 description:      'A course on mathematical, computational, and statistical ecology--'
-url:              http://ecologistchris.github.io
+url:              https://ecologistchris.github.io
 baseurl:          /
 
 author:
