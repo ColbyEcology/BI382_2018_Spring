@@ -9,7 +9,7 @@ plugins: [jekyll-paginate, jekyll-gist]
 # Setup
 title:            Ecological Modeling @ Colby College
 tagline:          'A Jekyll theme'
-description:      'A course on mathematical, computational, and statistical ecology--'
+description:      'A course on mathematical, computational, and statistical ecology'
 url:              https://ecologistchris.github.io
 baseurl:          /
 
