@@ -4,6 +4,7 @@ highlighter:      rouge
 
 # Permalinks
 permalink:        pretty
+gems: [jekyll-paginate, jekyll-gist]
 
 # Setup
 title:            Ecological Modeling @ Colby College
