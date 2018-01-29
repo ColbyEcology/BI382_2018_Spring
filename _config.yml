@@ -6,9 +6,9 @@ highlighter:      pygments
 permalink:        pretty
 
 # Setup
-title:            Ecological Modeling (BI382), Colby College
+title:            Ecological Modeling @ Colby College
 tagline:          'A Jekyll theme'
-description:      ''
+description:      'A course on mathematical, computational, and statistical ecology'
 url:              http://ecologistchris.github.io
 baseurl:          /
 
