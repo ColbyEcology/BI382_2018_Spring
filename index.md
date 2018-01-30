@@ -1,8 +1,7 @@
 ---
 layout: page
-title: Index.md
 ---
 
-*All models are wrong, but some are useful*&mdash;George Box, 1979, **Robustness in Statistics**
+*All models are wrong, but some are useful*&mdash;George Box, 1979, **Robustness in Statistics1**
 
 This is the homepage for Ecological Modeling (BI382) at Colby College.
