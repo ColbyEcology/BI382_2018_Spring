@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Lecture
 ---
 
 <p class="message">
