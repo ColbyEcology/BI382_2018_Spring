@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Index.md
+title:
 ---
 
 *All models are wrong, but some are useful*&mdash;George Box, 1979, **Robustness in Statistics2**
