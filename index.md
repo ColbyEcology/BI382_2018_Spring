@@ -3,7 +3,7 @@ layout: page
 title: ""
 ---
 
-# *All models are wrong, but some are useful* :D
+# *All models are wrong, but some are useful* 
 
 # Welcome to Ecological Modeling (BI382) at Colby College!
 
