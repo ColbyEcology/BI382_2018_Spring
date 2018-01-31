@@ -25,29 +25,31 @@ title: Schedule
 }
 </style>
 
+&#8224;VG is an abbreviation for the text **Population ecology: from first principles**, 2 ed., 2013, by Vandermeer and Goldberg
+
 Week |  Date  | Meeting |     Topic                                    | Reading      | Assignments 
 :---:|:------:|---------|----------------------------------------------|--------------|
 00   | 08 Feb | Lecture | Introduction to modeling                     | [Kendall 2015](http://onlinelibrary.wiley.com/doi/10.1890/14-2080.1/abstract) |
 01   | 12 Feb |   Lab   | Programming in R                             |              |
-     |        | Lecture | Density independent change                   |             | 
-02   | 19 Feb |   Lab   |           				                   |                |
-     |        | Lecture | Density dependent change                     |              |  
-03   | 26 Feb |   Lab   |           				                   |                |
-     |        | Lecture | Structured models                            |              |  
-04   | 05 Mar |   Lab   |           			               	       |                |
-     |        | Lecture | Model applications                           |              |  
-05   | 12 Mar |   Lab   |           		               		       |                |
-     |        | Lecture | Dynamical systems                            |              |  
-06   | 19 Mar |   Lab   |           				                   |                |
-     |        | Lecture | Spatial patterns and dynamics                |            |  
+     |        | Lecture | Density independent change                   | VG: ch.1     | 
+02   | 19 Feb |   Lab   |           				                   |              |
+     |        | Lecture | Density dependent change                     | VG: ch. 2    |  
+03   | 26 Feb |   Lab   |           				                   |              |
+     |        | Lecture | Structured models                            | VG: ch.3     |  
+04   | 05 Mar |   Lab   |           			               	       |              |
+     |        | Lecture | Model applications                           | VG: ch.4     |  
+05   | 12 Mar |   Lab   |           		               		       |              |
+     |        | Lecture | Dynamical systems                            | VG: ch.5     |  
+06   | 19 Mar |   Lab   |           				                   |              |
+     |        | Lecture | Spatial patterns and dynamics                | VG: ch.6     |  
 07   | 02 Apr |   Lab   |           				                   |              |
-     |        | Lecture | Predator-prey/Consumer-resourse interactions |          				    |              |
+     |        | Lecture | Predator-prey/Consumer-resourse interactions | VG: ch.7     |
 08   | 09 Apr |   Lab   |            				                   |              |
-     |        | Lecture | Disease ecology			                   |              |
+     |        | Lecture | Disease ecology			                   | VG: ch.8     |
 09   | 16 Apr |   Lab   |           				                   |              |
-     |        | Lecture | Competition  				                   |              |
+     |        | Lecture | Competition  				                   | VG: ch.9     |
 10   | 23 Apr |   Lab   |           				                   |              |
-     |        | Lecture | Facilitation and mutualism                   |              |
+     |        | Lecture | Facilitation and mutualism                   | VG: ch.10    |
 11   | 30 Apr |   Lab   |           				                   |              |
      |        | Lecture | Webs and networks			                   |              |
 12   | 07 May |   Lab   |           				                   |              |

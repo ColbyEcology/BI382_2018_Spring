@@ -9,13 +9,6 @@ Ecological Modelling is a course that helps students learn methods in mathematic
 
 # *All models are wrong, but some are useful* 
 
-# Welcome to Ecological Modeling (BI382) at Colby College!
-
-## Welcome to Ecological Modeling (BI382) at Colby College!
-
-### Welcome to Ecological Modeling (BI382) at Colby College!
-
-#### Welcome to Ecological Modeling (BI382) at Colby College!
 
 
 Forward modeling: ![alt text](https://imgs.xkcd.com/comics/sustainable.png "Though 100 years is longer than a lot of our resources.")
