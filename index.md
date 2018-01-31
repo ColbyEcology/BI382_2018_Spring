@@ -40,7 +40,7 @@ If you wish to speak confidentially about an incident of sexual misconduct, plea
 
 Students should be aware that faculty members are considered responsible employees; as such, if you disclose an incident of sexual misconduct to a faculty member, they have an obligation to report it to Colby’s Title IX Coordinator. “Disclosure” may include communication in-person, via email/phone/text, or through class assignments.
 
-To learn more about sexual misconduct or report an incident, visit (http://www.colby.edu/sexualviolence/)[http://www.colby.edu/sexualviolence/].
+To learn more about sexual misconduct or report an incident, visit [http://www.colby.edu/sexualviolence/](http://www.colby.edu/sexualviolence/).
 
 # *All models are wrong, but some are useful* 
 
