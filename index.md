@@ -6,20 +6,20 @@ title: "Welcome to Ecological Modeling (BI382) at Colby College"
 ### Course description
 Ecological Modelling is a course that is designed to help students learn methods in mathematical, computational, and statistical ecology. Collectively, these types quantitative models are central to the science of ecology for understanding, predicting, and inferring ecological patterns and pcor. Mathematical aspects of the course will cover traditional theory of simple analytical models. Computational aspects of the course will cover the implementation and analysis of more complex models. Statistical aspects of the course will include learning methods of fitting models to data, evaluating competing models given data, and using models to make predictions.
 
-### Leanring outcomes
+### Learning outcomes
 
 ### Professor information
-Dr. Christopher M. Moore
-Email: cmmoore@colby.edu
-Office: Olin 216
-Office phone: 207-859-5746
+Dr. Christopher M. Moore  
+Email: cmmoore@colby.edu  
+Office: Olin 216  
+Office phone: 207-859-5746  
 
 ### Meetings for lectures and labs
-Labs: M, 1—4:00 PM, in Olin 314
+Labs: M, 1—4:00 PM, in Olin 314  
 Lectures: TR, 9:30—10:45 AM, in Miller 205
 
 ### Text
-Required: *Population ecology: from first principles*, 2<sup>nd</sup> ed., 2013, by Vandermeer and Goldberg, Princeton University Press
+Required: *Population ecology: from first principles*, 2<sup>nd</sup> ed., 2013, by Vandermeer and Goldberg, Princeton University Press  
 Optional: *A primer of ecology with R*, 2009, by Stevens, Springer
 
 ### Grading
