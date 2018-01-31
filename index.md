@@ -5,7 +5,7 @@ title: ""
 
 # Welcome to Ecological Modeling (BI382) at Colby College
 
-Ecological modelling is a course that helps students learn mathematical, computational, and statistical ecology. Collectively, these types quantitative models are used to predict and infer natural ecological phenomena
+Ecological Modelling is a course that helps students learn methods in mathematical, computational, and statistical ecology. Collectively, these types quantitative models are central to ecological science to understand, predict, and infer natural ecological phenomena.
 
 # *All models are wrong, but some are useful* 
 
