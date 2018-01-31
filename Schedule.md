@@ -29,7 +29,7 @@ title: "Schedule"
 
 Week |  Date  | Meeting |     Topic                                                      | Reading      | Assignments 
 :---:|:------:|---------|----------------------------------------------------------------|--------------|
-01   | 08 Feb | Lecture | Introduction to modeling                                       | [Kendall 2015](http://onlinelibrary.wiley.com/doi/10.1890/14-2080.1/abstract){:target="_blank"} |
+00   | 08 Feb | Lecture | Introduction to modeling                                       | [Kendall 2015](http://onlinelibrary.wiley.com/doi/10.1890/14-2080.1/abstract){:target="_blank"} |
 01   | 12 Feb |   Lab   | Data structure, subsetting, and functions in R                 |              |
      |        | Lecture | Density independent change                                     | VG: ch.1     | 
 02   | 19 Feb |   Lab   | Basic programming in R                                         |              |
