@@ -7,7 +7,7 @@ permalink:        pretty
 plugins: [jekyll-paginate, jekyll-gist]
 
 # Setup
-title:            Ecological Modeling @ Colby College
+title:            Ecological Modeling at Colby College
 description:      'A course on mathematical, computational, and statistical ecology'
 url:              https://colbyecology.github.io
 baseurl:          https://colbyecology.github.io/
