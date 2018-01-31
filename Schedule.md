@@ -40,8 +40,6 @@ Week |  Date  | Meeting |     Topic                                    | Reading
      |        | Lecture | Dynamical systems                            |              |  
 06   | 19 Mar |   Lab   |           				                   |                |
      |        | Lecture | Spatial patterns and dynamics                |            |  
-     | 26 Mar |         | Spring recess				                   |              |
-     |        |         |           				                   |              |
 07   | 02 Apr |   Lab   |           				                   |              |
      |        | Lecture | Predator-prey/Consumer-resourse interactions |          				    |              |
 08   | 09 Apr |   Lab   |            				                   |              |
