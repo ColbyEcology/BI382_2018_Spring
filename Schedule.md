@@ -29,11 +29,11 @@ title: Schedule
 
 Week |  Date  | Meeting |     Topic                                                      | Reading      | Assignments 
 :---:|:------:|---------|----------------------------------------------------------------|--------------|
-00   | 08 Feb | Lecture | Introduction to modeling                                       | [Kendall 2015](http://onlinelibrary.wiley.com/doi/10.1890/14-2080.1/abstract) |
+00   | 08 Feb | Lecture | Introduction to modeling                                       | [Kendall 2015](http://onlinelibrary.wiley.com/doi/10.1890/14-2080.1/abstract){:target="_blank"} |
 01   | 12 Feb |   Lab   | Data structure, subsetting, and functions in R                 |              |
      |        | Lecture | Density independent change                                     | VG: ch.1     | 
 02   | 19 Feb |   Lab   | Basic programming in R                                         |              |
-     |        | Lecture | Density dependent change                                       | VG: ch. 2    |  
+     |        | Lecture | Density dependent change                                       | VG: ch.2     |  
 03   | 26 Feb |   Lab   | Model solutions: solving numerically in R                      |              |
      |        | Lecture | Structured population models                                   | VG: ch.3     |  
 04   | 05 Mar |   Lab   | Ecological experiment 1: single-species population growth      |              |
@@ -54,3 +54,4 @@ Week |  Date  | Meeting |     Topic                                             
      |        | Lecture | Webs and networks                        		                 |              |
 12   | 07 May |   Lab   | Research project: analysis                                     |              |
      |        | Lecture | Research project presentations: proposal                       |              |
+FF   | 07 May |         | Research project: analysis                                     |              |
