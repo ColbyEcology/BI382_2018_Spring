@@ -46,6 +46,8 @@ To learn more about sexual misconduct or report an incident, visit [http://www.c
 
 
 Forward modeling: ![alt text](https://imgs.xkcd.com/comics/sustainable.png "Though 100 years is longer than a lot of our resources.")
+Forward modeling: ![alt text](https://imgs.xkcd.com/comics/sustainable.png "Though 100 years is longer than a lot of our resources."){:height="50px"}
+Forward modeling: ![alt text](https://imgs.xkcd.com/comics/sustainable.png "Though 100 years is longer than a lot of our resources."){:height="50px" width="50px"}
 
 Inverse modeling: ![Inverse modeling](https://imgs.xkcd.com/comics/linear_regression.png "The 95% confidence interval suggests Rexthor's dog could also be a cat, or possibly a teapot.")
 
