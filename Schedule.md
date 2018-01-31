@@ -25,7 +25,7 @@ title: Schedule
 }
 </style>
 
-&#8224;VG is an abbreviation for the text **Population ecology: from first principles**, 2 ed., 2013, by Vandermeer and Goldberg
+&#8224;VG is an abbreviation for the text *Population ecology: from first principles*, 2 ed., 2013, by Vandermeer and Goldberg
 
 Week |  Date  | Meeting |     Topic                                    | Reading      | Assignments 
 :---:|:------:|---------|----------------------------------------------|--------------|
