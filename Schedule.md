@@ -54,4 +54,4 @@ Week |  Date  | Meeting |     Topic                                             
      |        | Lecture | Webs and networks                        		                 |              |
 12   | 07 May |   Lab   | Research project: analysis                                     |              |
      |        | Lecture | Research project presentations: proposal                       |              |
-FF   | 07 May |         | Research project: analysis                                     |              |
+Exam | 16 May |         | Research project: final paper due before 6:00 PM               |              |
