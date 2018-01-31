@@ -9,8 +9,8 @@ plugins: [jekyll-paginate, jekyll-gist]
 # Setup
 title:            Ecological Modeling (BI382) @ Colby College
 description:      'A course on mathematical, computational, and statistical ecology'
-url:              https://ecologistchris.github.io
-baseurl:          https://ecologistchris.github.io/
+url:              https://colbyecology.github.io
+baseurl:          https://colbyecology.github.io/
 
 author:
   name:           'Chris Moore'
