@@ -28,8 +28,13 @@ Optional: *A primer of ecology with R*, 2009, by Stevens, Springer
 
 ### Grading
 
+
 ### Attendance
 Role will not be taken, but regular attendance is necessary for you to succeed in this course.
+
+### Titles and names
+Students are often curious about how to address their professors. I am comfortable with Dr. Moore, Professor Moore, or Chris. What’s most important to me is that we create a culture of mutual respect in the classroom. As a sign of respect to you I will, by default, address you by your first name. Should you have preferred way of being addressed (Mx. last name, nickname, etc.), I encourage your to communicate that to me.
+
 
 ### Academic integrity
 
