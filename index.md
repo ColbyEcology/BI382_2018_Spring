@@ -7,11 +7,12 @@ title: "Welcome to Ecological Modeling (BI382) at Colby College"
 Ecological Modelling is a course that is designed to help students learn methods in mathematical, computational, and statistical ecology. Collectively, these types quantitative models are central to the science of ecology for understanding, predicting, and inferring ecological patterns and pcor. Mathematical aspects of the course will cover traditional theory of simple analytical models. Computational aspects of the course will cover the implementation and analysis of more complex models. Statistical aspects of the course will include learning methods of fitting models to data, evaluating competing models given data, and using models to make predictions.
 
 ### Learning outcomes
-After taking this course as successful student should be:
-
-1. Versed in elementary mathematical ecology
-2. Proficient in the use of the R programming language to build and analyze ecological models and keep a reproducible electronic notebook of their work
-3. Familiar with methods of statistical inference
+After taking this course as successful student should be
+- Versed in elementary mathematical ecology
+- Proficient in the use of the R programming language to
+	-  build and analyze ecological models
+	- keep a reproducible electronic notebook of their work
+- Familiar with methods of statistical inference
 
 ### Professor information
 Dr. Christopher M. Moore  
