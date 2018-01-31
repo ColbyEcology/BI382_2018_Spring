@@ -10,9 +10,7 @@ Ecological Modelling is a course that is designed to help students learn methods
 After taking this course as successful student should be:
 
 1. Versed in elementary mathematical ecology
-2. Proficient in the use of the R programming language  
-	to build and analyze ecological models  
-	to keep a reproducible electronic notebook of their work
+2. Proficient in the use of the R programming language to (1) build and analyze ecological models and (2) keep a reproducible electronic notebook of their work
 3. Familiar with methods of statistical inference
 
 ### Professor information
