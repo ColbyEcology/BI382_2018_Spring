@@ -40,15 +40,17 @@ Week |  Date  | Meeting |     Topic                                    | Reading
      |        | Lecture | Dynamical systems                            |              |  
 06   | 19 Mar |   Lab   |           				                   |                |
      |        | Lecture | Spatial patterns and dynamics                |            |  
-07   | 26 Mar |   Lab   |           				                   |              |
+     | 26 Mar |         | Spring recess				                   |              |
+     |        |         |           				                   |              |
+07   | 02 Apr |   Lab   |           				                   |              |
      |        | Lecture | Predator-prey/Consumer-resourse interactions |          				    |              |
-08   | 02 Apr |   Lab   |            				                   |              |
+08   | 09 Apr |   Lab   |            				                   |              |
      |        | Lecture | Disease ecology			                   |              |
-09   | 09 Apr |   Lab   |           				                   |              |
+09   | 16 Apr |   Lab   |           				                   |              |
      |        | Lecture | Competition  				                   |              |
-10   | 16 Apr |   Lab   |           				                   |              |
+10   | 23 Apr |   Lab   |           				                   |              |
      |        | Lecture | Facilitation and mutualism                   |              |
-11   | 23 Apr |   Lab   |           				                   |              |
+11   | 30 Apr |   Lab   |           				                   |              |
      |        | Lecture | Webs and networks			                   |              |
-12   | 30 Apr |   Lab   |           				                   |              |
+12   | 07 May |   Lab   |           				                   |              |
      |        | Lecture | Final research projects 	                   |              |
