@@ -110,8 +110,8 @@ depvar <- indvar^2
 plot(x = indvar, y = depvar)
  ```
 
-To create a **block of code with syntax highlighting** put three back quotes (`) before and after:
- ```{r}
+To create a **block of code with syntax highlighting** put three back quotes (`) before and after ;:
+ ```r
 indvar <- 1:10
 depvar <- indvar^2
 plot(x = indvar, y = depvar)
