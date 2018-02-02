@@ -75,6 +75,7 @@ Links to [headers](#HEADERS), [emphasis](#EMPHASIS), [lists](#LISTS), [tables](#
 | col3 is  | right-aligned | 3        |
 ```
 **output:**
+
 | column 1 | column 2      | column 3 |
 |----------|:-------------:|---------:|
 | col1 is  | left-aligned  | 1        |
@@ -88,6 +89,7 @@ Links to [headers](#HEADERS), [emphasis](#EMPHASIS), [lists](#LISTS), [tables](#
 *** or --- or ___
 ```
 **output:**
+
 ***
 
 <a name="CODE"></a>
