@@ -2,9 +2,9 @@
 layout: page
 title: "Chris' markdown guide"
 ---
-Links to [headers](#HEADERS)
+Links to [headers](#HEADERS), [emphasis](#EMPHASIS), [lists](#LISTS), [tables](#TABLES), [horizontal rule](#HORIZONTAL_RULE), [links](#LINKS), [code](#CODE)
 
-# HEADERS<a name="HEADERS"></a>
+<a name="HEADERS"></a># HEADERS
 **code:**
 ```
 # header 1
@@ -22,7 +22,7 @@ Links to [headers](#HEADERS)
 ##### header 5
 ###### header 6
 
-# EMPHASIS
+<a name=""></a># EMPHASIS
 
 **code:**
 ```
@@ -36,7 +36,7 @@ Links to [headers](#HEADERS)
 **bold**
 ~~strikethrough~~
 
-# LISTS
+<a name="LISTS"></a># LISTS
 **code:**
 ```
 * bulleted item
@@ -61,7 +61,7 @@ Links to [headers](#HEADERS)
 2. numbered item
 3. numbered item
 
-# TABLES
+<a name="TABLES"></a># TABLES
 **code:**
 ```
 | column 1 | column 2      | column 3 |
@@ -77,7 +77,7 @@ Links to [headers](#HEADERS)
 | col2 is  | centered      | 2        |
 | col3 is  | right-aligned | 3        |
 
-# HORIZONTAL RULLE
+<a name=" HORIZONTAL_RULLE"></a># HORIZONTAL RULLE
 **code:**
 ```
 *** or --- or ___
@@ -85,7 +85,7 @@ Links to [headers](#HEADERS)
 **output:**
 ***
 
-# CODE
+<a name="CODE"></a># CODE
 This is an example of **in-line code**: `plot(x = indvar, y = depvar)`. See, it's that easy.
 
 To create a **block of code** put three back quotes (`) before and after:
@@ -93,7 +93,7 @@ To create a **block of code** put three back quotes (`) before and after:
  block of code
  ```
 
-# LINKS
+<a name="LINKS"></a># LINKS
 
 **code:**
 ```
