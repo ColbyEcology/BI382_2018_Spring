@@ -4,7 +4,8 @@ title: "Chris' markdown guide"
 ---
 Links to [headers](#HEADERS), [emphasis](#EMPHASIS), [lists](#LISTS), [tables](#TABLES), [horizontal rule](#HORIZONTAL_RULE), [links](#LINKS), [code](#CODE)
 
-<a name="HEADERS"></a># HEADERS
+<a name="HEADERS"></a
+># HEADERS
 **code:**
 ```
 # header 1
@@ -22,7 +23,8 @@ Links to [headers](#HEADERS), [emphasis](#EMPHASIS), [lists](#LISTS), [tables](#
 ##### header 5
 ###### header 6
 
-<a name=""></a># EMPHASIS
+<a name=""></a>
+# EMPHASIS
 
 **code:**
 ```
@@ -36,7 +38,8 @@ Links to [headers](#HEADERS), [emphasis](#EMPHASIS), [lists](#LISTS), [tables](#
 **bold**
 ~~strikethrough~~
 
-<a name="LISTS"></a># LISTS
+<a name="LISTS"></a>
+# LISTS
 **code:**
 ```
 * bulleted item
@@ -61,7 +64,8 @@ Links to [headers](#HEADERS), [emphasis](#EMPHASIS), [lists](#LISTS), [tables](#
 2. numbered item
 3. numbered item
 
-<a name="TABLES"></a># TABLES
+<a name="TABLES"></a>
+# TABLES
 **code:**
 ```
 | column 1 | column 2      | column 3 |
@@ -77,7 +81,8 @@ Links to [headers](#HEADERS), [emphasis](#EMPHASIS), [lists](#LISTS), [tables](#
 | col2 is  | centered      | 2        |
 | col3 is  | right-aligned | 3        |
 
-<a name=" HORIZONTAL_RULLE"></a># HORIZONTAL RULLE
+<a name=" HORIZONTAL_RULLE"></a>
+# HORIZONTAL RULLE
 **code:**
 ```
 *** or --- or ___
@@ -85,7 +90,8 @@ Links to [headers](#HEADERS), [emphasis](#EMPHASIS), [lists](#LISTS), [tables](#
 **output:**
 ***
 
-<a name="CODE"></a># CODE
+<a name="CODE"></a>
+# CODE
 This is an example of **in-line code**: `plot(x = indvar, y = depvar)`. See, it's that easy.
 
 To create a **block of code** put three back quotes (`) before and after:
@@ -93,7 +99,8 @@ To create a **block of code** put three back quotes (`) before and after:
  block of code
  ```
 
-<a name="LINKS"></a># LINKS
+<a name="LINKS"></a>
+# LINKS
 
 **code:**
 ```
