@@ -2,7 +2,7 @@
 layout: page
 title: "Chris' markdown guide"
 ---
-Links to [headers](#HEADERS), [emphasis](#EMPHASIS), [lists](#LISTS), [tables](#TABLES), [horizontal rule](#HORIZONTAL_RULE), [links](#LINKS), [code](#CODE)
+Links to [headers](#HEADERS), [emphasis](#EMPHASIS), [lists](#LISTS), [tables](#TABLES), [horizontal rule](#HORIZONTAL_RULE), [code](#CODE), [links](#LINKS)
 
 <a name="HEADERS"></a>
 # HEADERS
@@ -23,7 +23,7 @@ Links to [headers](#HEADERS), [emphasis](#EMPHASIS), [lists](#LISTS), [tables](#
 ##### header 5
 ###### header 6
 
-<a name=""></a>
+<a name="EMPHASIS"></a>
 # EMPHASIS
 
 **code:**
@@ -81,7 +81,7 @@ Links to [headers](#HEADERS), [emphasis](#EMPHASIS), [lists](#LISTS), [tables](#
 | col2 is  | centered      | 2        |
 | col3 is  | right-aligned | 3        |
 
-<a name=" HORIZONTAL_RULLE"></a>
+<a name="HORIZONTAL_RULLE"></a>
 # HORIZONTAL RULLE
 **code:**
 ```
