@@ -14,7 +14,7 @@ After taking this course as successful student should be:
 
 ### Professor information
 Dr. Christopher M. Moore  
-Email: cmmoore@colby.edu  
+Email: cmmoore  
 Office: Olin 216  
 Office phone: 207-859-5746  
 
