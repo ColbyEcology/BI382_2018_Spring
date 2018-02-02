@@ -2,7 +2,7 @@
 layout: page
 title: "Chris' markdown guide"
 ---
-Links to [headers](#HEADERS), [emphasis](#EMPHASIS), [lists](#LISTS), [tables](#TABLES), [horizontal rule](#HORIZONTAL_RULE), [code](#CODE), [links](#LINKS)
+Links: [headers](#HEADERS), [emphasis](#EMPHASIS), [lists](#LISTS), [tables](#TABLES), [horizontal rule](#HORIZONTAL_RULE), [code](#CODE), [links](#LINKS)
 
 <a name="HEADERS"></a>
 # HEADERS
