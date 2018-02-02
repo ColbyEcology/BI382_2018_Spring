@@ -2,8 +2,9 @@
 layout: page
 title: "Chris' markdown guide"
 ---
+Links to [headers](#HEADERS)
 
-# HEADERS
+# HEADERS<a name="HEADERS"></a>
 **code:**
 ```
 # header 1
