@@ -98,7 +98,9 @@ This is an example of **in-line code**: `plot(x = indvar, y = depvar)`. See, it'
 
 To create a **block of code** put three back quotes (`) before and after:
  ```
- block of code
+indvar <- 1:10
+depvar <- indvar^2
+plot(x = indvar, y = depvar)
  ```
 
 <a name="LINKS"></a>
