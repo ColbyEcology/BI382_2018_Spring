@@ -3,4 +3,5 @@ layout: page
 title: "Resources"
 ---
 
-Test [link to Chris' markdown guide]: [link](../Misc/CMsMarkdown.md)
+Chris' markdown quick guide: [link](../Misc/CMsMarkdown)
+R Markdown Reference guide (4-page .pdf): [link](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
