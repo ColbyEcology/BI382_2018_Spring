@@ -113,7 +113,7 @@ To create a **block of code** put three back quotes (`) before and after:
 
 **code:**
 ```
-![Image](http://www.colby.edu/communicationsoffice/wp-content/uploads/sites/136/2015/01/Colby_logo_002878.png)
+![Colby logo](http://www.colby.edu/communicationsoffice/wp-content/uploads/sites/136/2015/01/Colby_logo_002878.png)
 ```
 **output:**
-![Image](http://www.colby.edu/communicationsoffice/wp-content/uploads/sites/136/2015/01/Colby_logo_002878.png)
+![Colby logo](http://www.colby.edu/communicationsoffice/wp-content/uploads/sites/136/2015/01/Colby_logo_002878.png)
