@@ -4,8 +4,8 @@ title: "Chris' markdown guide"
 ---
 Links to [headers](#HEADERS), [emphasis](#EMPHASIS), [lists](#LISTS), [tables](#TABLES), [horizontal rule](#HORIZONTAL_RULE), [links](#LINKS), [code](#CODE)
 
-<a name="HEADERS"></a
-># HEADERS
+<a name="HEADERS"></a>
+# HEADERS
 **code:**
 ```
 # header 1
