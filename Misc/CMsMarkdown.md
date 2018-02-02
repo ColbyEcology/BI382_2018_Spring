@@ -81,8 +81,8 @@ Links to [headers](#HEADERS), [emphasis](#EMPHASIS), [lists](#LISTS), [tables](#
 | col2 is  | centered      | 2        |
 | col3 is  | right-aligned | 3        |
 
-<a name="HORIZONTAL_RULLE"></a>
-# HORIZONTAL RULLE
+<a name="HORIZONTAL_RULE"></a>
+# HORIZONTAL RULE
 **code:**
 ```
 *** or --- or ___
