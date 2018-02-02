@@ -33,23 +33,23 @@ Week |  Date  | Meeting |     Topic                                             
 01   | 12 Feb |   Lab   | Data structure, subsetting, and functions in R                 |              |
      |        | Lecture | Density independent change                                     | VG: ch.1     | 
 02   | 19 Feb |   Lab   | Basic programming in R                                         |              |
-     |        | Lecture | Density dependent change                                       | VG: ch.2     |  
+     |        | Lecture | Density dependent change                                       | VG: ch.1     |  
 03   | 26 Feb |   Lab   | Model solutions: solving numerically in R                      |              |
-     |        | Lecture | Structured population models                                   | VG: ch.3     |  
+     |        | Lecture | Structured population models                                   | VG: ch.2     |  
 04   | 05 Mar |   Lab   | Ecological experiment 1: single-species population growth      |              |
-     |        | Lecture | Model applications                                             | VG: ch.4     |  
+     |        | Lecture | Model applications                                             | VG: ch.3     |  
 05   | 12 Mar |   Lab   | Parameter estimation in R: least square methods                |              |
-     |        | Lecture | Dynamical systems                                              | VG: ch.5     |  
+     |        | Lecture | Dynamical systems                                              | VG: ch.4     |  
 06   | 19 Mar |   Lab   | Spatial modeling: lattice-based models                         |              |
-     |        | Lecture | Spatial patterns and dynamics                                  | VG: ch.6     |  
+     |        | Lecture | Spatial patterns and dynamics                                  | VG: ch.5     |  
 07   | 02 Apr |   Lab   | Research project presentations: proposal                       |              |
-     |        | Lecture | Ecological experiment 2: predators and prey in virtual reality | VG: ch.7     |
+     |        | Lecture | Ecological experiment 2: predators and prey in virtual reality | VG: ch.6     |
 08   | 09 Apr |   Lab   | Predator-prey/Consumer-resourse interactions                   |              |
-     |        | Lecture | Disease ecology		           	                             | VG: ch.8     |
+     |        | Lecture | Disease ecology		           	                             | VG: ch.7     |
 09   | 16 Apr |   Lab   | Parameter estimation in R: maximum likelihood                  |              |
-     |        | Lecture | Competition  				                                     | VG: ch.9     |
+     |        | Lecture | Competition  				                                     | VG: ch.8     |
 10   | 23 Apr |   Lab   | Research project presentations: methods                        |              |
-     |        | Lecture | Facilitation and mutualism                                     | VG: ch.10    |
+     |        | Lecture | Facilitation and mutualism                                     | VG: ch.9    |
 11   | 30 Apr |   Lab   | Research project: analysis                                     |              |
      |        | Lecture | Webs and networks                        		                 |              |
 12   | 07 May |   Lab   | Research project: analysis                                     |              |
