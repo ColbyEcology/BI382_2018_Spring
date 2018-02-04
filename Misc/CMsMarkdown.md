@@ -2,7 +2,7 @@
 layout: page
 title: "Chris' markdown guide"
 ---
-Links: [headers](#HEADERS), [emphasis](#EMPHASIS), [lists](#LISTS), [tables](#TABLES), [horizontal rule](#HORIZONTAL_RULE), [code](#CODE), [links](#LINKS)
+Links: [HEADERS](#HEADERS), [EMPHASIS](#EMPHASIS), [LISTS](#LISTS), [TABLES](#TABLES), [HORIZONTAL RULE](#HORIZONTAL_RULE), [CODE](#CODE), [LINKS](#LINKS), [COMMENTS](#COMMENTS)
 
 <a name="HEADERS"></a>
 # HEADERS
@@ -126,3 +126,23 @@ plot(x = indvar, y = depvar)
 ```
 **output:**
 ![Colby logo](http://www.colby.edu/communicationsoffice/wp-content/uploads/sites/136/2015/01/Colby_logo_002878.png)
+
+<a name="COMMENTS"></a>
+# COMMENTS
+**code:**
+
+```
+I like to comment out <!--- words ---> or blocks of text   
+<!---  
+look at me   
+I'm a line of code   
+--->
+```
+
+**output**
+
+I like to comment out <!--- words ---> or blocks of text
+<!---
+look at me
+I'm a line of code
+--->
