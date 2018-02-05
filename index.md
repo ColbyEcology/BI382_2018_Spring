@@ -4,7 +4,7 @@ title: "Welcome to Ecological Modeling (BI382) at Colby College"
 ---
 
 ### Course description
-Ecological Modelling is a course that is designed to help students learn theory and methods in mathematical, computational, and statistical ecology. Collectively, these types quantitative approaches are central to the science of ecology for understanding, predicting, and inferring ecological patterns and processes. Both classic and contemporary topics will be covered, with an emphasis on using modern tools to analyze and communicate theory and data.
+Ecological Modelling is a course that is designed to help students learn theory and methods in mathematical, computational, and statistical ecology. Collectively, these types quantitative approaches are central to the science of ecology for understanding, predicting, and making inferences about ecological patterns and processes. Both classic and contemporary topics will be covered, with an emphasis on using modern tools to analyze and present theory and data.
 
 * Mathematical aspects of the course will cover traditional theory of simple analytical models.
 * Computational aspects of the course will cover the implementation and analysis of more complex models
@@ -15,8 +15,8 @@ Ecological Modelling is a course that is designed to help students learn theory 
 ### Learning outcomes
 After taking this course as successful student should be:
 
-1. Versed in elementary mathematical ecology
-2. Proficient in the use of the R programming language to build and analyze ecological models and keep a reproducible electronic notebook of their work
+1. **Versed in elementary mathematical ecology.** This includes the study and analysis of single-species population models, structured population models, spatial models, two-species population models, and multi-species models. 
+2. **Proficient in the use of the R programming language to build and analyze ecological models.** This includes making use of 
 3. Familiar with methods of statistical inference
 
 ### Professor information
