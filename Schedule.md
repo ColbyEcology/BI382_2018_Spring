@@ -49,7 +49,7 @@ Week |  Date  | Meeting |     Topic                                             
 09   | 16 Apr |   Lab   | Parameter estimation in R: maximum likelihood                  |              |
      |        | Lecture | Competition  				                                     | VG: ch.8     |
 10   | 23 Apr |   Lab   | Research project presentations: methods                        |              |
-     |        | Lecture | Facilitation and mutualism                                     | VG: ch.9    |
+     |        | Lecture | Facilitation and mutualism                                     | VG: ch.9     |
 11   | 30 Apr |   Lab   | Research project: analysis                                     |              |
      |        | Lecture | Webs and networks                        		                 |              |
 12   | 07 May |   Lab   | Research project: analysis                                     |              |
