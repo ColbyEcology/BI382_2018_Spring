@@ -11,9 +11,8 @@
 
     <nav class="sidebar-nav">
       <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">General</a>
-      <a class="sidebar-nav-item" href="https://colbyecology.github.io/Schedule">Schedule</a>
-      <a class="sidebar-nav-item" href="https://colbyecology.github.io/Resources">Resources</a>
-      <a href="bi382.colby.edu">Bi382.colby.edu</a>
+      <a class="sidebar-nav-item" href="Schedule">Schedule</a>
+      <a class="sidebar-nav-item" href="Resources">Resources</a>
 
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
@@ -28,9 +27,10 @@
         {% endif %}
       {% endfor %}
       {% endcomment %}
+    </nav>
+      <a href="bi382.colby.edu">BI382.colby.edu</a>
 
       <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
-    </nav>
 
     <p>&copy;{{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>
