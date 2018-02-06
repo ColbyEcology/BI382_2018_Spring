@@ -29,6 +29,7 @@
  * Global resets
  *
  * Update the foundational and global aspects of the page.
+ * reduced fron from 16 to 14 and 20 to 18
  */
 
 html {
@@ -36,12 +37,12 @@ html {
 }
 @media (min-width: 48em) {
   html {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media (min-width: 58em) {
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
