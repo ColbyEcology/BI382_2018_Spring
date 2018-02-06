@@ -35,6 +35,13 @@ Optional: *A primer of ecology with R*, 2009, by Stevens, Springer Press
 
 ### Grading
 
+Assignments             | Proportion of the course  |
+-----------------------:|--------------------------:|
+Remodeling project      |                      0.40 |
+Lecture exercises  (10) |          0.03 * 10 = 0.30 |
+Lab experiments     (2) |            0.1 * 2 = 0.20 |
+Lab notebooks       (4) |           0.06 * 4 = 0.24 |
+Participation           |                      0.05 |
 
 ### Attendance
 Role will not be taken, but regular attendance is necessary for you to succeed in this course.
