@@ -30,17 +30,17 @@ Labs: M, 1—4:00 PM, in Olin 314
 Lectures: TR, 9:30—10:45 AM, in Miller 205
 
 ### Text
-Required: *Population ecology: from first principles*, 2<sup>nd</sup> ed., 2013, by Vandermeer and Goldberg, Princeton University Press  
-Optional: *A primer of ecology with R*, 2009, by Stevens, Springer Press
+* Required: *Population ecology: from first principles*, 2<sup>nd</sup> ed., 2013, by Vandermeer and Goldberg, Princeton University Press  
+* Optional: *A primer of ecology with R*, 2009, by Stevens, Springer Press
 
 ### Grading
 
 Assignments        | Each | No. | Proportion of the course |
 :------------------|-----:|:---:|:------------------------:|
 Remodeling project | 0.40 | 1   |                     0.40 |
-Lecture exercises  | 0.03 | 10  |         0.03 * 10 = 0.30 |
+Lecture notebooks  | 0.03 | 10  |         0.03 * 10 = 0.30 |
 Lab experiments    | 0.10 | 0.2 |           0.1 * 2 = 0.20 |
-Lab notebooks      | 0.06 | 4   |          0.06 * 4 = 0.24 |
+Lab reports        | 0.06 | 4   |          0.06 * 4 = 0.24 |
 Participation      | 0.05 | 1   |                     0.05 |
 
 ### Attendance

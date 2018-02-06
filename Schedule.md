@@ -27,31 +27,31 @@ title: "Schedule"
 
 &#8224;VG is an abbreviation for the text *Population ecology: from first principles*, 2<sup>nd</sup> ed., 2013, by Vandermeer and Goldberg
 
-Week |  Date  | Meeting |     Topic                                                      | Reading      | Assignments 
-:---:|:------:|---------|----------------------------------------------------------------|--------------|
+Week |  Date  | Meeting |     Topic                                                      | Reading           | Assignments 
+:---:|:------:|---------|----------------------------------------------------------------|-------------------|
 00   | 08 Feb | Lecture | Introduction to modeling                                       | [Kendall 2015](http://onlinelibrary.wiley.com/doi/10.1890/14-2080.1/abstract){:target="_blank"} |
-01   | 12 Feb |   Lab   | Data structure, subsetting, and functions in R                 |              |
-     |        | Lecture | Density independent change                                     | VG: ch.1     | 
-02   | 19 Feb |   Lab   | Basic programming in R                                         |              |
-     |        | Lecture | Density dependent change                                       | VG: ch.1     |  
-03   | 26 Feb |   Lab   | Model solutions: solving numerically in R                      |              |
-     |        | Lecture | Structured population models                                   | VG: ch.2     |  
-04   | 05 Mar |   Lab   | Ecological experiment 1: single-species population growth      |              |
-     |        | Lecture | Model applications                                             | VG: ch.3     |  
-05   | 12 Mar |   Lab   | Parameter estimation in R: least square methods                |              |
-     |        | Lecture | Dynamical systems                                              | VG: ch.4     |  
-06   | 19 Mar |   Lab   | Spatial modeling: lattice-based models                         |              |
-     |        | Lecture | Spatial patterns and dynamics                                  | VG: ch.5     |  
-07   | 02 Apr |   Lab   | Research project presentations: proposal                       |              |
-     |        | Lecture | Predator-prey/Consumer-resourse interactions                   | VG: ch.6     |
-08   | 09 Apr |   Lab   | Ecological experiment 2: predators and prey in virtual reality |              |
-     |        | Lecture | Disease ecology		           	                             | VG: ch.7     |
-09   | 16 Apr |   Lab   | Parameter estimation in R: maximum likelihood                  |              |
-     |        | Lecture | Competition  				                                     | VG: ch.8     |
-10   | 23 Apr |   Lab   | Research project presentations: methods                        |              |
-     |        | Lecture | Facilitation and mutualism                                     | VG: ch.9     |
-11   | 30 Apr |   Lab   | Research project: analysis                                     |              |
-     |        | Lecture | Webs and networks                        		                 |              |
-12   | 07 May |   Lab   | Research project: analysis                                     |              |
-     |        | Lecture | Research project presentations: proposal                       |              |
-Exam | 16 May |         | Research project: final paper due before 6:00 PM               |              |
+01   | 12 Feb |   Lab   | Data structure, subsetting, and functions in R                 |                   | Lab report 1
+     |        | Lecture | Density independent change                                     | VG: ch.1, pp. 1–8 | Problem
+02   | 19 Feb |   Lab   | Basic programming in R                                         |                   | Lab report 2
+     |        | Lecture | Density dependent change                                       | VG: ch.1, pp. 9–29| Exercise 1
+03   | 26 Feb |   Lab   | Model solutions: solving numerically in R                      |                   | Lab report 3
+     |        | Lecture | Structured population models                                   | VG: ch.2          | Exercise 2
+04   | 05 Mar |   Lab   | Ecological experiment 1: single-species population growth      |                   |
+     |        | Lecture | Model applications                                             | VG: ch.3          | Exercise 3
+05   | 12 Mar |   Lab   | Parameter estimation in R: least square methods                |                   | Experiment 1
+     |        | Lecture | Dynamical systems                                              | VG: ch.4          | Exercise 4
+06   | 19 Mar |   Lab   | Spatial modeling: lattice-based models                         |                   | Lab report 4
+     |        | Lecture | Spatial patterns and dynamics                                  | VG: ch.5          | Exercise 5
+07   | 02 Apr |   Lab   | Remodeling project presentations: proposal                     |                   | Remodel proposal
+     |        | Lecture | Predator-prey/Consumer-resourse interactions                   | VG: ch.6          | Exercise 6
+08   | 09 Apr |   Lab   | Ecological experiment 2: predators and prey in virtual reality |                   |
+     |        | Lecture | Disease ecology		           	                             | VG: ch.7          | Exercise 7
+09   | 16 Apr |   Lab   | Parameter estimation in R: maximum likelihood                  |                   | Experiment 2
+     |        | Lecture | Competition  				                                     | VG: ch.8          | Exercise 8
+10   | 23 Apr |   Lab   | Research project presentations: methods                        |                   | Remodel methods
+     |        | Lecture | Facilitation and mutualism                                     | VG: ch.9          | Exercise 9
+11   | 30 Apr |   Lab   | Research project: analysis                                     |                   |
+     |        | Lecture | Webs and networks                        		                 |                   | Exercise 10
+12   | 07 May |   Lab   | Research project: analysis                                     |                   |
+     |        | Lecture | Research project presentations: proposal                       |                   | Remodel presentation
+Exam | 16 May |         | Research project: final paper due before 6:00 PM               |                   | Remodel final paper
