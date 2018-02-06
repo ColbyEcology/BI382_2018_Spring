@@ -70,4 +70,4 @@ compiles page to pdf
 pandoc index.md --latex-engine=xelatex -V geometry:margin=1in -o Misc/Syllabus.pdf
 --->
 
-<small>[download this page as a .pdf](Misc/Syllabus.pdf)</small>
+<small>[download this page as a .pdf](/Misc/Syllabus.pdf)</small>
