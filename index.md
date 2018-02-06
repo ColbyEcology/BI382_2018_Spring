@@ -37,11 +37,11 @@ Lectures: TR, 9:30—10:45 AM, in Miller 205
 
 Assignments        | Each | No. | Proportion of the course |
 :------------------|-----:|:---:|:------------------------:|
-Remodeling project | 0.40 | 1   |                     0.40 |
+Remodeling project | 0.32 | 1   |                     0.32 |
 Lecture notebooks  | 0.03 | 10  |         0.03 * 10 = 0.30 |
-Lab experiments    | 0.10 | 0.2 |           0.1 * 2 = 0.20 |
-Lab reports        | 0.06 | 4   |          0.06 * 4 = 0.24 |
-Participation      | 0.05 | 1   |                     0.05 |
+Lab experiments    | 0.06 | 2   |          0.06 * 2 = 0.12 |
+Lab reports        | 0.05 | 4   |          0.05 * 4 = 0.20 |
+Participation      | 0.06 | 1   |                     0.06 |
 
 ### Attendance
 Role will not be taken, but regular attendance is necessary for you to succeed in this course.

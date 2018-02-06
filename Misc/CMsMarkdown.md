@@ -96,14 +96,14 @@ Links: [HEADERS](#HEADERS), [EMPHASIS](#EMPHASIS), [LISTS](#LISTS), [TABLES](#TA
 # CODE
 This is an example of **in-line code**: `plot(x = indvar, y = depvar)`. See, it's that easy.
 
-To create a **block of code** put three back quotes (`) before and after:
+To create a **block of code** put three back quotes (`) before and after the code:
  ```
 indvar <- 1:10
 depvar <- indvar^2
 plot(x = indvar, y = depvar)
  ```
 
-To create a **block of code with syntax highlighting** put three back quotes (`) before and after:
+To create a **block of code with syntax highlighting** put three back quotes (`) and a little r  before and three back quotes after the code:
  ```r
 indvar <- 1:10
 depvar <- indvar^2
