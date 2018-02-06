@@ -3,7 +3,7 @@ layout: page
 title: "Welcome to Ecological Modeling (BI382) at Colby College"
 ---
 
-### Course description
+### Course description <small>[download this page as a .pdf](Syllabus.md)</small>
 Ecological Modelling is a course that is designed to help students learn theory and methods in mathematical, computational, and statistical ecology. Collectively, these types quantitative approaches are central to the science of ecology for understanding, predicting, and making inferences about ecological patterns and processes. Both classic and contemporary topics will be covered, with an emphasis on using modern tools to analyze and present theory and data.
 
 * Mathematical aspects of the course will cover traditional theory of simple analytical models.
@@ -63,16 +63,14 @@ If you wish to speak confidentially about an incident of sexual misconduct, plea
 
 Students should be aware that faculty members are considered responsible employees; as such, if you disclose an incident of sexual misconduct to a faculty member, they have an obligation to report it to Colby’s Title IX Coordinator. “Disclosure” may include communication in-person, via email/phone/text, or through class assignments.
 
-To learn more about sexual misconduct or report an incident, visit [http://www.colby.edu/sexualviolence/](http://www.colby.edu/sexualviolence/).
+To learn more about sexual misconduct or report an incident, visit [http://www.colby.edu/sexualviolence/](http://www.colby.edu/sexualviolence/){:target="_blank"}.
 
 # *All models are wrong, but some are useful* 
 
+{::comment} [//]: [//]: # Dropbox/Projects/dispersing.github.io/Teaching/IntroEco [//]: # pandoc Syllabus.md -f markdown -t html -o Syllabus.html [//]: # pandoc Syllabus.md --latex-engine=xelatex -o Syllabus.pdf [//]: # pandoc Syllabus.md -f markdown -o LaTeX/Syllabus.tex [//]: # pandoc Syllabus.md -f markdown -s -o LaTeX/Syllabus.tex -V geometry:margin=0.5in {:/comment}
 
 Forward modeling: ![alt text](https://imgs.xkcd.com/comics/sustainable.png "Though 100 years is longer than a lot of our resources.")
 Forward modeling: ![alt text](https://imgs.xkcd.com/comics/sustainable.png "Though 100 years is longer than a lot of our resources."){:height="50px"}
 Forward modeling: ![alt text](https://imgs.xkcd.com/comics/sustainable.png "Though 100 years is longer than a lot of our resources."){:height="50px" width="50px"}
 
 Inverse modeling: ![Inverse modeling](https://imgs.xkcd.com/comics/linear_regression.png "The 95% confidence interval suggests Rexthor's dog could also be a cat, or possibly a teapot.")
-
-
-This is the homepage for Ecological Modeling (BI382) at Colby College.
