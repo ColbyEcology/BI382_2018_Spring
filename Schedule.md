@@ -25,13 +25,13 @@ title: "Schedule"
 }
 </style>
 
-&#8224;VG is an abbreviation for the text *Population ecology: from first principles*, 2<sup>nd</sup> ed., 2013, by Vandermeer and Goldberg
+<sup>&#8224;</sup>VG is an abbreviation for the text *Population ecology: from first principles*, 2<sup>nd</sup> ed., 2013, by Vandermeer and Goldberg
 
 Week |  Date  | Meeting |     Topic                                                      | Reading           | Assignments 
 :---:|:------:|---------|----------------------------------------------------------------|-------------------|
 00   | 08 Feb | Lecture | Introduction to modeling                                       | [Kendall 2015](http://onlinelibrary.wiley.com/doi/10.1890/14-2080.1/abstract){:target="_blank"} |
 01   | 12 Feb |   Lab   | Data structure, subsetting, and functions in R                 |                   | <span style="color:#002878">Lab report 1</span>
-     |        | Lecture | Density independent change                                     | VG: ch.1, pp. 1–8 | Notebook, draft
+     |        | Lecture | Density independent change                                     | VG: ch.1, pp. 1–8 | <span style="color:#788bbb">Notebook, draft</span>
 02   | 19 Feb |   Lab   | Basic programming in R                                         |                   | <span style="color:#002878">Lab report 2</span>
      |        | Lecture | Density dependent change                                       | VG: ch.1, pp. 9–29| <span style="color:#788bbb">Notebook 1</span>
 03   | 26 Feb |   Lab   | Model solutions: solving numerically in R                      |                   | <span style="color:#002878">Lab report 3</span>
