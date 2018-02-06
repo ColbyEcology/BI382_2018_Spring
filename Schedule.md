@@ -43,8 +43,8 @@ Week |  Date  | Meeting |     Topic                                             
 06   | 19 Mar |   Lab   | Spatial modeling: lattice-based models                         |              |
      |        | Lecture | Spatial patterns and dynamics                                  | VG: ch.5     |  
 07   | 02 Apr |   Lab   | Research project presentations: proposal                       |              |
-     |        | Lecture | Ecological experiment 2: predators and prey in virtual reality | VG: ch.6     |
-08   | 09 Apr |   Lab   | Predator-prey/Consumer-resourse interactions                   |              |
+     |        | Lecture | Predator-prey/Consumer-resourse interactions                   | VG: ch.6     |
+08   | 09 Apr |   Lab   | Ecological experiment 2: predators and prey in virtual reality |              |
      |        | Lecture | Disease ecology		           	                             | VG: ch.7     |
 09   | 16 Apr |   Lab   | Parameter estimation in R: maximum likelihood                  |              |
      |        | Lecture | Competition  				                                     | VG: ch.8     |

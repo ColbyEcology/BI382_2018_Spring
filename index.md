@@ -31,7 +31,7 @@ Lectures: TR, 9:30—10:45 AM, in Miller 205
 
 ### Text
 Required: *Population ecology: from first principles*, 2<sup>nd</sup> ed., 2013, by Vandermeer and Goldberg, Princeton University Press  
-Optional: *A primer of ecology with R*, 2009, by Stevens, Springer
+Optional: *A primer of ecology with R*, 2009, by Stevens, Springer Press
 
 ### Grading
 
@@ -69,4 +69,4 @@ To learn more about sexual misconduct or report an incident, visit [http://www.c
 compiles page to pdf
 pandoc index.md --latex-engine=xelatex -V geometry:margin=1in -o Misc/Syllabus.pdf
 --->
-<small><a href="./Misc/Syllabus.pdf" download>Download this page as a .pdf</a></small>
+<small><a href="./Misc/Syllabus.pdf" download>download this page as a .pdf</a></small>
