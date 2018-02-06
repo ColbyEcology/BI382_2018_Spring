@@ -70,14 +70,4 @@ compiles page to pdf
 pandoc index.md --latex-engine=xelatex -V geometry:margin=1in -o Misc/Syllabus.pdf
 --->
 
-<<<<<<< HEAD
 <small>[download this page as a .pdf](Misc/Syllabus.pdf)</small>
-=======
-{::comment} [//]: [//]: # Dropbox/Projects/dispersing.github.io/Teaching/IntroEco [//]: # pandoc Syllabus.md -f markdown -t html -o Syllabus.html [//]: # pandoc Syllabus.md --latex-engine=xelatex -o Syllabus.pdf [//]: # pandoc Syllabus.md -f markdown -o LaTeX/Syllabus.tex [//]: # pandoc Syllabus.md -f markdown -s -o LaTeX/Syllabus.tex -V geometry:margin=0.5in {:/comment}
-
-Forward modeling: ![alt text](https://imgs.xkcd.com/comics/sustainable.png "Though 100 years is longer than a lot of our resources.")
-Forward modeling: ![alt text](https://imgs.xkcd.com/comics/sustainable.png "Though 100 years is longer than a lot of our resources."){:height="50px"}
-Forward modeling: ![alt text](https://imgs.xkcd.com/comics/sustainable.png "Though 100 years is longer than a lot of our resources."){:height="50px" width="50px"}
-
-Inverse modeling: ![Inverse modeling](https://imgs.xkcd.com/comics/linear_regression.png "The 95% confidence interval suggests Rexthor's dog could also be a cat, or possibly a teapot.")
->>>>>>> 7ee6764a9d324d9cf9ee0b96585957b70357e8df
