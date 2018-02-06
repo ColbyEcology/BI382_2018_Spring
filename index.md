@@ -35,8 +35,8 @@ Lectures: TR, 9:30—10:45 AM, in Miller 205
 
 ### Grading
 
-Assignments        | Each | No. | Proportion of the course |
-:------------------|-----:|:---:|:------------------------:|
+Assignments | Each | No. | Proportion of the course |
+:------------------|:----:|:---:|:------------------------:|
 Remodeling project | 0.32 | 1   |                     0.32 |
 Lecture notebooks  | 0.03 | 10  |         0.03 * 10 = 0.30 |
 Lab experiments    | 0.06 | 2   |          0.06 * 2 = 0.12 |
