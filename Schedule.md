@@ -31,27 +31,27 @@ Week |  Date  | Meeting |     Topic                                             
 :---:|:------:|---------|----------------------------------------------------------------|-------------------|
 00   | 08 Feb | Lecture | Introduction to modeling                                       | [Kendall 2015](http://onlinelibrary.wiley.com/doi/10.1890/14-2080.1/abstract){:target="_blank"} |
 01   | 12 Feb |   Lab   | Data structure, subsetting, and functions in R                 |                   | <span style="color:#002878">Lab report 1</span>
-     |        | Lecture | Density independent change                                     | VG: ch.1, pp. 1–8 | Exercise, draft
+     |        | Lecture | Density independent change                                     | VG: ch.1, pp. 1–8 | Notebook, draft
 02   | 19 Feb |   Lab   | Basic programming in R                                         |                   | <span style="color:#002878">Lab report 2</span>
-     |        | Lecture | Density dependent change                                       | VG: ch.1, pp. 9–29| <span style="color:#788bbb">Exercise 1</span>
+     |        | Lecture | Density dependent change                                       | VG: ch.1, pp. 9–29| <span style="color:#788bbb">Notebook 1</span>
 03   | 26 Feb |   Lab   | Model solutions: solving numerically in R                      |                   | <span style="color:#002878">Lab report 3</span>
-     |        | Lecture | Structured population models                                   | VG: ch.2          | <span style="color:#788bbb">Exercise 2</span>
+     |        | Lecture | Structured population models                                   | VG: ch.2          | <span style="color:#788bbb">Notebook 2</span>
 04   | 05 Mar |   Lab   | Ecological experiment 1: single-species population growth      |                   |
-     |        | Lecture | Model applications                                             | VG: ch.3          | <span style="color:#788bbb">Exercise 3</span>
+     |        | Lecture | Model applications                                             | VG: ch.3          | <span style="color:#788bbb">Notebook 3</span>
 05   | 12 Mar |   Lab   | Parameter estimation in R: least square methods                |                   | <span style="color:#b4b9c2">Experiment 1</span>
-     |        | Lecture | Dynamical systems                                              | VG: ch.4          | <span style="color:#788bbb">Exercise 4</span>
+     |        | Lecture | Dynamical systems                                              | VG: ch.4          | <span style="color:#788bbb">Notebook 4</span>
 06   | 19 Mar |   Lab   | Spatial modeling: lattice-based models                         |                   | <span style="color:#002878">Lab report 4</span>
-     |        | Lecture | Spatial patterns and dynamics                                  | VG: ch.5          | <span style="color:#788bbb">Exercise 5</span>
+     |        | Lecture | Spatial patterns and dynamics                                  | VG: ch.5          | <span style="color:#788bbb">Notebook 5</span>
 07   | 02 Apr |   Lab   | Remodeling project presentations: proposal                     |                   | Remodel proposal
-     |        | Lecture | Predator-prey/Consumer-resourse interactions                   | VG: ch.6          | <span style="color:#788bbb">Exercise 6</span>
+     |        | Lecture | Predator-prey/Consumer-resourse interactions                   | VG: ch.6          | <span style="color:#788bbb">Notebook 6</span>
 08   | 09 Apr |   Lab   | Ecological experiment 2: predators and prey in virtual reality |                   |
-     |        | Lecture | Disease ecology		           	                             | VG: ch.7          | <span style="color:#788bbb">Exercise 7</span>
+     |        | Lecture | Disease ecology		           	                             | VG: ch.7          | <span style="color:#788bbb">Notebook 7</span>
 09   | 16 Apr |   Lab   | Parameter estimation in R: maximum likelihood                  |                   | <span style="color:#b4b9c2">Experiment 2</span>
-     |        | Lecture | Competition  				                                     | VG: ch.8          | <span style="color:#788bbb">Exercise 8</span>
+     |        | Lecture | Competition  				                                     | VG: ch.8          | <span style="color:#788bbb">Notebook 8</span>
 10   | 23 Apr |   Lab   | Research project presentations: methods                        |                   | Remodel methods
-     |        | Lecture | Facilitation and mutualism                                     | VG: ch.9          | <span style="color:#788bbb">Exercise 9</span>
+     |        | Lecture | Facilitation and mutualism                                     | VG: ch.9          | <span style="color:#788bbb">Notebook 9</span>
 11   | 30 Apr |   Lab   | Research project: analysis                                     |                   |
-     |        | Lecture | Webs and networks                        		                 |                   | <span style="color:#788bbb">Exercise 10</span>
+     |        | Lecture | Webs and networks                        		                 |                   | <span style="color:#788bbb">Notebook 10</span>
 12   | 07 May |   Lab   | Research project: analysis                                     |                   |
      |        | Lecture | Research project presentations: proposal                       |                   | Remodel presentation
 Exam | 16 May |         | Research project: final paper due before 6:00 PM               |                   | Remodel final paper
