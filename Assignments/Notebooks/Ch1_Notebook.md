@@ -34,3 +34,4 @@ From the data calculated in exercise 1.7, divide the estimated derivative by the
 ## For the full notebook due 23 Feb, all exercises (1.1–1.18)
 
 # Additional problems
+None this week
