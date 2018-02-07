@@ -32,8 +32,8 @@ Week |  Date  | Meeting |     Topic                                             
 00   | 08 Feb | Lecture | Introduction to modeling                                       | [Kendall 2015](http://onlinelibrary.wiley.com/doi/10.1890/14-2080.1/abstract){:target="_blank"} |
 01   | 12 Feb |   Lab   | Data structure, subsetting, and functions in R                 |                   | <span style="color:#002878">Lab report 1</span>
      |        | Lecture | Density independent change                                     | VG: ch.1, pp. 1–8 | <span style="color:#788bbb">[Notebook, draft](../Assignments/Notebooks/Ch1_Notebook)</span>
-02   | 19 Feb |   Lab   | Basic programming in R                                         |                   | <span style="color:#002878">[Lab report 2](../Assignments/Notebooks/Ch1_Notebook)</span>
-     |        | Lecture | Density dependent change                                       | VG: ch.1, pp. 9–29| <span style="color:#788bbb">Notebook 1</span>
+02   | 19 Feb |   Lab   | Basic programming in R                                         |                   | <span style="color:#002878">Lab report 2</span>
+     |        | Lecture | Density dependent change                                       | VG: ch.1, pp. 9–29| <span style="color:#788bbb">[Notebook 1](../Assignments/Notebooks/Ch1_Notebook)</span>
 03   | 26 Feb |   Lab   | Model solutions: solving numerically in R                      |                   | <span style="color:#002878">Lab report 3</span>
      |        | Lecture | Structured population models                                   | VG: ch.2          | <span style="color:#788bbb">Notebook 2</span>
 04   | 05 Mar |   Lab   | Ecological experiment 1: single-species population growth      |                   |

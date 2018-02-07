@@ -7,7 +7,7 @@ title: "Welcome to Ecological Modeling (BI382) at Colby College"
 Ecological Modelling is a course that is designed to help students learn theory and methods in mathematical, computational, and statistical ecology. Collectively, these types quantitative approaches are central to the science of ecology for understanding, predicting, and making inferences about ecological patterns and processes. Both classic and contemporary topics will be covered, with an emphasis on using modern tools to analyze and present theory and data.
 
 * Mathematical aspects of the course will cover traditional theory of simple analytical models.
-* Computational aspects of the course will cover the implementation and analysis of more complex models
+* Computational aspects of the course will cover the implementation and analysis of more complex models.
 * Statistical aspects of the course will include learning methods of fitting models to data, evaluating competing models given data, and using models to make predictions.
 
 
@@ -18,6 +18,8 @@ After taking this course as successful student should be:
 1. **Versed in elementary mathematical ecology.** Ecological topics include single-species population models, structured population models, spatial models, two-species population models, and multi-species models. Analytical topics include equilibrium, stability, chaos, and stochasticity.
 2. **Proficient in the use of the R programming language and environment to build, analyze, and present ecological models.** This includes understanding and use of R data structures, functional programming, libraries for simulation and analysis of ecological models, and dynamic reports/documents using R Notebooks.
 3. **Familiar with methods of statistical inference.** This includes least squares and maximum likelihood estimators to fit models to data, and using information criteria for evaluate model fit.
+4. **Able to comprehend and (re)create a scientific model.** The "Remodeling project" will include identifying a model in peer-reviewed that can feasibly be recreated, recreate, and critique the model.
+
 
 ### Professor information
 Dr. Christopher M. Moore  

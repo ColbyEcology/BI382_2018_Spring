@@ -17,11 +17,13 @@ Plot the numbers aclculated in exercise 1.1 as ln($N$) versus time. Do this by c
 Derive an equation for doubling time in an exponentially growing population, and derive one for tripling time.
 
 ### 1.4
-Plot the values computed 
+Plot the values computed in exercise 1.1 on a graph of $N_{t+1}$ on the vertical axis and $N_t$ on the horizontal axis for each value of $\lambda$ on a single graph. This time plot them as lines using the function `lines()`.
 
 ### 1.5
+The human population on a small island nation is said to be doubling every 20 years. What would be the value of *r* (assuming an exponential model)?
 
 ### 1.6
+
 
 ### 1.7
 
