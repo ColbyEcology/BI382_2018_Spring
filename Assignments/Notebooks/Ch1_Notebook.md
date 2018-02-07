@@ -20,13 +20,13 @@ Derive an equation for doubling time in an exponentially growing population, and
 Plot the values computed in exercise 1.1 on a graph of $N_{t+1}$ on the vertical axis and $N_t$ on the horizontal axis for each value of $\lambda$ on a single graph. This time plot them as lines using the function `lines()`.
 
 ### 1.5
-The human population on a small island nation is said to be doubling every 20 years. What would be the value of *r* (assuming an exponential model)?
+The human population on a small island nation is said to be doubling every 20 years. What would be the value of $r$ (assuming an exponential model)?
 
 ### 1.6
-Using the differential form (i.e., continuous time), suppose that $r = 0.5%. Compuse *N* as a function of *t*, again beginning with a single individual. Do the same for $r = 1.5$ and for $r = 1$. Graph all of the results.
+Using the differential form (i.e., continuous time), suppose that $r = 0.5$. Compuse $N$ as a function of $t$, again beginning with a single individual. Do the same for $r = 1.5$ and for $r = 1$. Graph all of the results.
 
 ### 1.7
-Plot the derivative (which you can approximate by subtracting the current $N$ from its successive on and dividing by the change in time) as a function of *N* for the data calculated in exercise 1.6 (use a small time interval, e.g., 0.01).
+Plot the derivative (which you can approximate by subtracting the current $N$ from its successive on and dividing by the change in time) as a function of $N$ for the data calculated in exercise 1.6 (use a small time interval, e.g., 0.01).
 
 ### 1.8
 From the data calculated in exercise 1.7, divide the estimated derivative by the average number of individuals during the time period, and plot them over time. What is the result, and what does it mean?
