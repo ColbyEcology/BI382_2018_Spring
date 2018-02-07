@@ -94,7 +94,7 @@ Links: [HEADERS](#HEADERS), [EMPHASIS](#EMPHASIS), [LISTS](#LISTS), [TABLES](#TA
 
 <a name="CODE"></a>
 # CODE
-This is an example of **in-line code**: `plot(x = indvar, y = depvar)`. See, it's that easy.
+Adding a back quote (`) before and after text is an example of how you add **in-line code**: `plot(x = indvar, y = depvar)`. See, it's that easy.
 
 To create a **block of code** put three back quotes (`) before and after the code:
  ```
