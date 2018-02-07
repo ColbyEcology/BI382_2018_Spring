@@ -78,4 +78,4 @@ To learn more about sexual misconduct or report an incident, visit [http://www.c
 compiles page to pdf
 pandoc index.md --latex-engine=xelatex -V geometry:margin=1in -o Misc/Syllabus.pdf
 --->
-<small><a href="./Misc/Syllabus.pdf" download>Download this page as a .pdf, last updated {{ "now" | date: "%Y-%m-%d %H:%M" }}</a></small> 
+<small><a href="./Misc/Syllabus.pdf" download>Download this page as a .pdf, last updated 07 February 2017</a></small> 
