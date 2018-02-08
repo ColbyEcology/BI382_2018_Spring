@@ -12,14 +12,14 @@ title: "Schedule"
 @media (min-width: 48em) {
   .content {
     max-width: 50rem;
-    margin-left: 10rem;
+    margin-left: 16rem;
     margin-right: 2rem;
   }
 }
 
 @media (min-width: 64em) {
   .content {
-    margin-left: 15rem;
+    margin-left: 18rem;
     margin-right: 4rem;
   }
 }
