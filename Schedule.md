@@ -19,7 +19,7 @@ title: "Schedule"
 
 @media (min-width: 64em) {
   .content {
-    margin-left: 10rem;
+    margin-left: 15rem;
     margin-right: 4rem;
   }
 }
