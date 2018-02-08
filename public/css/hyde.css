@@ -29,7 +29,7 @@
  * Global resets
  *
  * Update the foundational and global aspects of the page.
- * reduced fron from 16 to 14 and 20 to 18
+ * reduced fron from 16 to 14 and 20 to 18 to 16
  */
 
 html {
@@ -42,7 +42,7 @@ html {
 }
 @media (min-width: 58em) {
   html {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -138,6 +138,7 @@ a.sidebar-link-item:focus {
  * Align the contents of the site above the proper threshold with some margin-fu
  * with a 25%-wide `.sidebar`.CM: *** max used to be 38***
 * CM reduced margin width by 2rem for both @media (then again by 2 more!)(then cut in half)
+* then both to 10
  */
 
 .content {
@@ -148,14 +149,14 @@ a.sidebar-link-item:focus {
 @media (min-width: 48em) {
   .content {
     max-width: 50rem;
-    margin-left: 8rem;
+    margin-left: 10rem;
     margin-right: 2rem;
   }
 }
 
 @media (min-width: 64em) {
   .content {
-    margin-left: 9rem;
+    margin-left: 10rem;
     margin-right: 4rem;
   }
 }
