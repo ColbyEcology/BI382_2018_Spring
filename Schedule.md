@@ -29,7 +29,7 @@ title: "Schedule"
 
 Week |  Date  | Meeting |     Topic                                                      | Reading           | Assignments | Misc.
 :---:|:------:|---------|----------------------------------------------------------------|-------------------|-------------|
-00   | 08 Feb | Lecture | Introduction to modeling                                       | [Kendall 2015](http://onlinelibrary.wiley.com/doi/10.1890/14-2080.1/abstract){:target="_blank"}  | | [IntroPres](../Presentations/Lec1_Intro/){:target="_blank"} |
+00   | 08 Feb | Lecture | Introduction to modeling                                       | [Kendall 2015](http://onlinelibrary.wiley.com/doi/10.1890/14-2080.1/abstract){:target="_blank"}  | | [IntroPres](../Presentations/Lec1_Intro/index.html){:target="_blank"} |
 01   | 12 Feb |   Lab   | Data structure, subsetting, and functions in R                 |                   | <span style="color:#002878">Lab report 1</span> |
      |        | Lecture | Density independent change                                     | VG: ch.1, pp. 1–8 | <span style="color:#788bbb">[Notebook, draft](../Assignments/Notebooks/Ch1_Notebook)</span> |
 02   | 19 Feb |   Lab   | Basic programming in R                                         |                   | <span style="color:#002878">Lab report 2</span> |
