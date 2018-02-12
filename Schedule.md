@@ -30,7 +30,7 @@ title: "Schedule"
 Week |  Date  | Meeting |     Topic                                                      | Reading           | Assignments | Misc.
 :---:|:------:|---------|----------------------------------------------------------------|-------------------|-------------|
 00   | 08 Feb | Lecture | Introduction to modeling                                       | [Kendall 2015](http://onlinelibrary.wiley.com/doi/10.1890/14-2080.1/abstract){:target="_blank"}  | | [IntroPres](../Presentations/Lec1_Intro.pdf){:target="_blank"}
-01   | 12 Feb |   Lab   | Introduction to R and RStudio                                  |                   | <span style="color:#002878">Lab report 1</span> |
+01   | 12 Feb |   Lab   | Introduction to R and RStudio                                  |                   | <span style="color:#002878">Lab report 1</span> | [IntroToR](../Presentations/Lab1_IntroToR.html){:target="_blank"}
      |        | Lecture | Density independent change                                     | VG: ch.1, pp. 1–8 | <span style="color:#788bbb">[Notebook, draft](../Assignments/LectureNotebooks/Ch1_Notebook)</span> |
 02   | 19 Feb |   Lab   | Basic programming in R                                         |                   | <span style="color:#002878">Lab report 2</span> |
      |        | Lecture | Density dependent change                                       | VG: ch.1, pp. 9–29| <span style="color:#788bbb">[Notebook 1](../Assignments/LectureNotebooks/Ch1_Notebook)</span> |
@@ -50,7 +50,7 @@ Week |  Date  | Meeting |     Topic                                             
      |        | Lecture | Competition  				                                     | VG: ch.8          | <span style="color:#788bbb">Notebook 8</span> |
 10   | 23 Apr |   Lab   | Remodeling project presentations: methods                      |                   | Remodeling methods |
      |        | Lecture | Facilitation and mutualism                                     | VG: ch.9          | <span style="color:#788bbb">Notebook 9</span> |
-11   | 30 Apr |   Lab   | Research project: analysis                                     |                   | |
+11   | 30 Apr |   Lab   | Remodeling project: analysis                                     |                   | |
      |        | Lecture | Webs and networks                        		                 | Bascompte & Jordano 2014, and McCann 2012              | <span style="color:#788bbb">Notebook 10</span> |
 12   | 07 May |   Lab   | Remodeling project: analysis                                   |                   | |
      |        | Lecture | Remodeling project presentations: Results                      |                   | Remodeling presentation |
