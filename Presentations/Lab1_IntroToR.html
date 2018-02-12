@@ -38,7 +38,7 @@ class: inverse, center, bottom
 
 --
 
-* **Subsetting**: *very* useful for data analysis. For this course, we're creating all of our data *de novo*, so we won't necessarily have as much to do.
+* **Subsetting**: *very* useful for data analysis. For this course, we're creating all of our data *de novo*, so we won't necessarily be subsetting as much as other courses.
 
 --
 
@@ -513,10 +513,12 @@ class: inverse, center, bottom
 When logging on the lab computer, the home directory is:
 
 *"hard drive"/"users"/"logged in user"*
-```
-/Users/"userID"  # generally
+
+```r
+/Users/`userID`  # generally
 /Users/cmmoore # on *my* computer
 ```
+
 Here you see `Applications`, `Desktop`, `Documents`, `Downloads`, etc.
 
 --
@@ -527,7 +529,7 @@ When logging on to RStudio server, the home directory is:
 
 *"colby's hard drive/users/courses/bi382/logged in user"*
 ```
-/Volumes/Courses/BI382/"userID" # generally
+/Volumes/Courses/BI382/`userID` # generally
 /Volumes/Courses/BI382/cmmoore
 ```
 Here you see one directory: `Private`
@@ -535,28 +537,21 @@ Here you see one directory: `Private`
 # Workflow: directories
 Create the following directories in `Private`:
 * `LabReports`
-   * `LabReport_1` – `LabReport_4`
 * `LabExperiments`
-   * `LabExperiments_1`
-   * `LabExperiments_2`
 * `LectureNotebooks`
-   * `LectureNotebook_1` – `LectureNotebook_1`
 * `RemodelingProject`
-   * `RemodelingPres_Proposal`
-   * `RemodelingPres_Methods`
-   * `RemodelingPres_Results`
-   * `Remodeling_Pres_Proposal_Paper`
 
 I would:
 1. Make a new folder in `/Volumes/Courses/BI382/"userID"` called `Work` (or something)
 2. Copy this sturucture into `/Volumes/Courses/BI382/"userID"/Work`
----
-class: inverse, center, middle
-# markdown
 
 ---
 class: inverse, center, middle
 # R Notebooks
+
+---
+class: inverse, center, middle
+# markdown
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
