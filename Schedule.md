@@ -30,8 +30,8 @@ title: "Schedule"
 Week |  Date  | Meeting |     Topic                                                      | Reading           | Assignments | Misc.
 :---:|:------:|---------|----------------------------------------------------------------|-------------------|-------------|
 00   | 08 Feb | Lecture | Introduction to modeling                                       | [Kendall 2015](http://onlinelibrary.wiley.com/doi/10.1890/14-2080.1/abstract){:target="_blank"}  | | [IntroPres](../Presentations/Lec1_Intro.pdf){:target="_blank"}
-01   | 12 Feb |   Lab   | Introduction to R and RStudio                                  |                   | <span style="color:#002878">[Lab report 1](../Assignments/LabReports/Ch1_Notebook)</span> | [IntroToR](../Presentations/Lab1_IntroToR.html){:target="_blank"}
-     |        | Lecture | Density independent change                                     | VG: ch.1, pp. 1–8 | <span style="color:#788bbb">[Notebook, draft](../Assignments/LectureNotebooks/LabReport_1.nb.html)</span> |
+01   | 12 Feb |   Lab   | Introduction to R and RStudio                                  |                   | <span style="color:#002878">[Lab report 1](../Assignments/LabReports/LabReport_1.nb.html)</span> | [IntroToR](../Presentations/Lab1_IntroToR.html){:target="_blank"}
+     |        | Lecture | Density independent change                                     | VG: ch.1, pp. 1–8 | <span style="color:#788bbb">[Notebook, draft](../Assignments/LectureNotebooks/Ch1_Notebook)</span> |
 02   | 19 Feb |   Lab   | Basic programming in R                                         |                   | <span style="color:#002878">Lab report 2</span> |
      |        | Lecture | Density dependent change                                       | VG: ch.1, pp. 9–29| <span style="color:#788bbb">[Notebook 1](../Assignments/LectureNotebooks/Ch1_Notebook)</span> |
 03   | 26 Feb |   Lab   | Model solutions: solving numerically in R                      |                   | <span style="color:#002878">Lab report 3</span> |
