@@ -48,10 +48,10 @@ Week |  Date  | Meeting |     Topic                                             
      |        | Lecture | Disease ecology		           	                             | VG: ch.7          | <span style="color:#788bbb">Notebook 7</span> |
 09   | 16 Apr |   Lab   | Parameter estimation in R: maximum likelihood                  |                   | <span style="color:#b4b9c2">Experiment 2</span> |
      |        | Lecture | Competition  				                                     | VG: ch.8          | <span style="color:#788bbb">Notebook 8</span> |
-10   | 23 Apr |   Lab   | Research project presentations: methods                        |                   | Remodeling methods |
+10   | 23 Apr |   Lab   | Remodeling project presentations: methods                      |                   | Remodeling methods |
      |        | Lecture | Facilitation and mutualism                                     | VG: ch.9          | <span style="color:#788bbb">Notebook 9</span> |
 11   | 30 Apr |   Lab   | Research project: analysis                                     |                   | |
      |        | Lecture | Webs and networks                        		                 | Bascompte & Jordano 2014, and McCann 2012              | <span style="color:#788bbb">Notebook 10</span> |
-12   | 07 May |   Lab   | Research project: analysis                                     |                   | |
-     |        | Lecture | Research project presentations: proposal                       |                   | Remodeling presentation |
-Exam | 16 May |         | Research project: final paper due before 6:00 PM               |                   | Remodeling final paper |
+12   | 07 May |   Lab   | Remodeling project: analysis                                   |                   | |
+     |        | Lecture | Remodeling project presentations: Results                      |                   | Remodeling presentation |
+Exam | 16 May |         | Remodeling project: final paper due before 6:00 PM             |                   | Remodeling final paper |
