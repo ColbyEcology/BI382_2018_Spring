@@ -34,7 +34,7 @@ class: inverse, center, bottom
 ---
 # Introduction to R(1 + Studio)
 
-* **Data structures**: how R organizes different types of data; i.e., perhaps the most important think about R that you never thought too deeply about
+* **Data structures**: how R organizes different types of data; i.e., perhaps the most important thing about R that you never thought too deeply about
 
 --
 
@@ -90,72 +90,72 @@ class: inverse, center, middle
 ---
 # Data structures in R: data types
 ## 2. numeric: `1` or `-4` or `16^(1/2)`
-  
-  ```r
-  is.numeric(42)
-  ## [1] TRUE
-  
-  2 + 4 / 5  # order of operations is valid
-  ## [1] 2.8
-  
-  4*3^2     # order of operations is valid
-  ## [1] 36
-  
-  str(4)
-  ##  num 4
-  ```
+
+```r
+is.numeric(42)
+## [1] TRUE
+
+2 + 4 / 5  # order of operations is valid
+## [1] 2.8
+
+4*3^2     # order of operations is valid
+## [1] 36
+
+str(4)
+##  num 4
+```
 
 ---
 # Data structures in R: data types
 ## 3. integer: `3L`
-  
-  ```r
-  is.integer(3L)
-  ## [1] TRUE
-  
-  1L + 2L
-  ## [1] 3
-  
-  str(11L)
-  ##  int 11
-  ```
+
+```r
+is.integer(3L)
+## [1] TRUE
+
+1L + 2L
+## [1] 3
+
+str(11L)
+##  int 11
+```
 ---
 # Data structures in R: data types
 ## 4. logical: `T` or `F` (equivalent to `TRUE` and `FALSE`, respectively)
-  
-  ```r
-  is.logical(T)
-  ## [1] TRUE
-  
-  is.logical(D)
-  ## [1] FALSE
-  
-  1 == 1
-  ## [1] TRUE
-  
-  1 == 2
-  ## [1] FALSE
-  
-  str(2 == 2)
-  ##  logi TRUE
-  ```
+
+```r
+is.logical(T)
+## [1] TRUE
+
+is.logical(D)
+## [1] FALSE
+
+1 == 1
+## [1] TRUE
+
+1 == 2
+## [1] FALSE
+
+str(2 == 2)
+##  logi TRUE
+```
 ---
 # Data structures in R: data types
 ## 5. complex: 
-  
-  ```r
-  is.complex(4)
-  ## [1] FALSE
-  
-  is.complex(4i)
-  ## [1] TRUE
-  
-  complex(real = 3, imaginary = 2) + complex(real = 1, imaginary = 20)
-  ## [1] 4+22i
-  
-  str(3 + 2i)
-  ##  cplx 3+2i
-  ```
+
+```r
+is.complex(4)
+## [1] FALSE
+
+is.complex(4i)
+## [1] TRUE
+
+complex(real = 3, imaginary = 2) + complex(real = 1, imaginary = 20)
+## [1] 4+22i
+
+str(3 + 2i)
+##  cplx 3+2i
+```
 ---
 
 # Data structures in R
