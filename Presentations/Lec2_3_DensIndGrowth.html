@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lec2&amp;3_DensIndChange</title>
+    <title>Lec2and3_DensIndChange</title>
     <meta charset="utf-8">
     <meta name="author" content="Christopher Moore" />
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
@@ -11,9 +11,9 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Lec2&amp;3_DensIndChange
+# Lec2and3_DensIndChange
 ### Christopher Moore
-### 2018/02/13
+### 2018/02/13&amp;15
 
 ---
 
@@ -34,7 +34,7 @@ Etc.        |            |                    |
 * Variables in the model change all of the time
 * Generations are *overlapping*
 * There is no inherent delay between "events"
-* No built-in seasonality
+* No built-in periodicity (e.g., seasonality)
 
 --
 
@@ -74,10 +74,67 @@ $$ \frac{\Delta N}{\Delta t} = f(N) $$
 
 ---
 ## Anatomy of a dynamical model: discrete time
-`\begin{align}
-f(N) &amp;= \frac{\Delta N}{\Delta t} = \\[1em]
-N_{t+1} &amp;= N_t + RN_t
-\end{align}`
+* General dyanmic model
+$$f(N) = \frac{\Delta N}{\Delta t} = $$
+--
+
+* Geometric growth: constant growth, discrete time 
+`$$N_{t+1} = N_t + RN_t$$`
+
+--
+
+* Writing a function in `R`
+
+```r
+geom.growth &lt;- function(Nt, R) {
+* Nt1 &lt;- Nt + R*Nt
+  return(Nt1)
+}
+```
+
+--
+
+* An example with `\(N_t = 1\)` and `\(R = 0.1\)`:
+
+```r
+geom.growth(Nt = 1, R = 0.1)
+```
+
+```
+## [1] 1.1
+```
+
+---
+## Anatomy of a dynamical model: continuous time
+* General dyanmic model
+$$f(N) = \frac{\Delta N}{\Delta t} = $$
+--
+
+* Geometric growth: constant growth, discrete time 
+`$$\frac{dN}{dt} = rN$$`
+
+--
+* Writing a function in `R`
+
+```r
+exp.growth &lt;- function(Nft, r) {
+*  dNdt &lt;- r*Nft
+  return(dNdt)
+}
+```
+
+--
+* An example with `\(N = 1\)` and `\(r = 0.1\)`:
+
+```r
+exp.growth(Nft = 1, r = 0.1)
+```
+
+```
+## [1] 0.1
+```
+
+
 ---
 ## Continuous and discrete time (with equations)
 ### Continous
@@ -85,7 +142,7 @@ N_{t+1} &amp;= N_t + RN_t
 * Generations are *overlapping*
 * There is no inherent delay between "events"
 * No built-in seasonality
-$$ \frac{dN}{dt} = f(N) $$
+`$$\frac{dN}{dt} = f(N)$$`
 
 --
 
@@ -102,22 +159,63 @@ class: inverse, center, middle
 ---
 # The simplest models: constant change
 .pull-left[
-Geometric growth for `\(R = 0.1\)`
+Geometric growth for `\(R = 0.1\)` and `\(N_1 = 2\)`:
 $$ \vphantom{\frac{dN}{dt}} N_{t+1} = N_t + RN_t $$
-&lt;img src="Lec2_3_DensIndGrowth_files/figure-html/unnamed-chunk-1-1.png" width="300" height="300" /&gt;
+&lt;img src="Lec2_3_DensIndGrowth_files/figure-html/unnamed-chunk-5-1.png" width="300" height="300" /&gt;
 ]
 
 --
 
 .pull-right[
-Exponential growth for `\(r = 0.1\)`
+Exponential growth for `\(r = 0.1\)` and `\(N(1) = 2\)`:
 $$ \frac{dN}{dt} = rN $$
 
-&lt;img src="Lec2_3_DensIndGrowth_files/figure-html/unnamed-chunk-2-1.png" width="300" height="300" /&gt;
+&lt;img src="Lec2_3_DensIndGrowth_files/figure-html/unnamed-chunk-6-1.png" width="300" height="300" /&gt;
 ]
 
 ---
-&lt;img src="Lec2_3_DensIndGrowth_files/figure-html/unnamed-chunk-3-1.png" width="500" height="500" /&gt;
+# Note that continous time is always greater than discrete time
+&lt;img src="Lec2_3_DensIndGrowth_files/figure-html/unnamed-chunk-7-1.png" width="400" height="400" style="display: block; margin: auto;" /&gt;
+
+---
+# The simplest models: constant change
+.pull-left[
+Geometric growth for `\(R = -0.25\)` and `\(N_1 = 10\)`:
+$$ \vphantom{\frac{dN}{dt}} N_{t+1} = N_t + RN_t $$
+&lt;img src="Lec2_3_DensIndGrowth_files/figure-html/unnamed-chunk-8-1.png" width="300" height="300" /&gt;
+]
+
+--
+
+.pull-right[
+Exponential growth for `\(r = -0.25\)` and `\(N(1) = 10\)`:
+$$ \frac{dN}{dt} = rN $$
+
+&lt;img src="Lec2_3_DensIndGrowth_files/figure-html/unnamed-chunk-9-1.png" width="300" height="300" /&gt;
+]
+---
+# Note that continous time is always greater than discrete time
+&lt;img src="Lec2_3_DensIndGrowth_files/figure-html/unnamed-chunk-10-1.png" width="400" height="400" style="display: block; margin: auto;" /&gt;
+---
+class: inverse, center, middle
+# So I have a model, what do I do with it?
+
+---
+# What do to with models &lt;small&gt;(including density-independent growth and everything we wil cover for this course)&lt;/small&gt;
+
+* Analyze it!
+    * Simulate it
+    * Solve it
+    * Find long term behavior
+    * Determine behavior if perturbed
+    * Make predictions
+  
+--
+
+* Vizualize it!
+    * Plot a time series of `\(t\)` and population size ( `\(N\)` )
+    * Plot population size ( `\(N\)` ) and population growth `\(\frac{\Delta N}{\Delta t}\)`
+    * Plot population size ( `\(N\)` ) and growth per individual (per-capita) `\(\frac{1}{N}\frac{\Delta N}{\Delta t}\)`
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
