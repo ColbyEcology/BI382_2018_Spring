@@ -4,7 +4,7 @@ title: "Chapter 1 notebook"
 ---
 
 # Exercises based on Vandermeer and Goldberg
-**Due 23 February**
+**Due 26 February**
 
 ### 1.1
 By hand, compute the expected number of individuals over time in a population with a single initial individual that grows according to equation 3 for $\lambda = 1.9$, $\lambda = 2.0$, and $\lambda = 2.1$, where $\lambda$ is the finite rate of increase. Enter your data in R using `c()` for 10 timesteps. For example: `lambda_1.9 <- c(1, 1.9)` (but with nine more entries). Plot the data as points and use the function `points()` to present all three trajectories on a single plot. Plot your data as a timeseries, meaning the horizontal axis is time (or timesteps, in this instance).
