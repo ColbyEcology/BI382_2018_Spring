@@ -53,7 +53,7 @@ Assuming that a population grows according to the logistic equation, what is the
 Using the logistic map and starting with 0.1 individuals, project the population 50 times with values of $\lambda =$ 0.1, 1.5, 2.0, 3.0, and 3.5. How does the time series change as a function of $\lambda$?
 
 ### 1.17
-In exercise 1.4, successive values of population density were plotted against one another (i.e., $N_{t+1}$ was plotted against $N_t$). Repeat that exercise for $\lambda =$ 1/5, 2.0, 3.0, and 3.5, and then modify the equation to be the logistic map (eqn. 27) and make the graphs again for $\lambda =$ 1/5, 2.0, 3.0, and 3.5.
+In exercise 1.4, successive values of population density were plotted against one another (i.e., $N_{t+1}$ was plotted against $N_t$). Repeat that exercise for $\lambda =$ 1.5, 2.0, 3.0, and 3.5, and then modify the equation to be the logistic map (eqn. 27) and make the graphs again for $\lambda =$ 1.5, 2.0, 3.0, and 3.5.
 
 ### 1.18
 Plot $N_{t+1}$ against $N_t$ for the Beverton and Holt model, the Hassell model, and the Ricker model (eqns. 28–30), and compare them. Let $\lambda = 1$, $\alpha = 1$, and $b = 2$. If you wanted explore how the parameter values affect various aspects of the plot, verbally describe what you would do.
