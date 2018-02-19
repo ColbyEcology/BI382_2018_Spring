@@ -30,6 +30,6 @@ Plot the derivative (which you can approximate by subtracting the current $N$ fr
 ### 1.8
 From the data calculated in exercise 1.7, divide the estimated derivative by the average number of individuals during the time period, and plot them over time. What is the result, and what does it mean?
 
-## For the full notebook due 23 Feb, all exercises (1.1–1.18) (to appear week 01)
+## For the full notebook due 26 Feb, all exercises (1.1–1.18) (to appear week 01)
 
 # Additional problems
