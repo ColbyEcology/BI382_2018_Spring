@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lec2and3_DensIndChange</title>
+    <title>DensIndChange</title>
     <meta charset="utf-8">
     <meta name="author" content="Christopher Moore" />
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
@@ -11,9 +11,9 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Lec2and3_DensIndChange
+# DensIndChange
 ### Christopher Moore
-### 2018/02/13&amp;15
+### 2018/02/13&amp;15&amp;20
 
 ---
 
@@ -161,7 +161,7 @@ class: inverse, center, middle
 .pull-left[
 Geometric growth for `\(R = 0.1\)` and `\(N_1 = 2\)`:
 $$ \vphantom{\frac{dN}{dt}} N_{t+1} = N_t + RN_t $$
-&lt;img src="Lec2_3_DensIndGrowth_files/figure-html/unnamed-chunk-5-1.png" width="300" height="300" /&gt;
+&lt;img src="Lec02_03_DensIndGrowth_files/figure-html/unnamed-chunk-5-1.png" width="300" height="300" /&gt;
 ]
 
 --
@@ -170,19 +170,19 @@ $$ \vphantom{\frac{dN}{dt}} N_{t+1} = N_t + RN_t $$
 Exponential growth for `\(r = 0.1\)` and `\(N(1) = 2\)`:
 $$ \frac{dN}{dt} = rN $$
 
-&lt;img src="Lec2_3_DensIndGrowth_files/figure-html/unnamed-chunk-6-1.png" width="300" height="300" /&gt;
+&lt;img src="Lec02_03_DensIndGrowth_files/figure-html/unnamed-chunk-6-1.png" width="300" height="300" /&gt;
 ]
 
 ---
 # Note that continous time is always greater than discrete time
-&lt;img src="Lec2_3_DensIndGrowth_files/figure-html/unnamed-chunk-7-1.png" width="400" height="400" style="display: block; margin: auto;" /&gt;
+&lt;img src="Lec02_03_DensIndGrowth_files/figure-html/unnamed-chunk-7-1.png" width="400" height="400" style="display: block; margin: auto;" /&gt;
 
 ---
 # The simplest models: constant change
 .pull-left[
 Geometric growth for `\(R = -0.25\)` and `\(N_1 = 10\)`:
 $$ \vphantom{\frac{dN}{dt}} N_{t+1} = N_t + RN_t $$
-&lt;img src="Lec2_3_DensIndGrowth_files/figure-html/unnamed-chunk-8-1.png" width="300" height="300" /&gt;
+&lt;img src="Lec02_03_DensIndGrowth_files/figure-html/unnamed-chunk-8-1.png" width="300" height="300" /&gt;
 ]
 
 --
@@ -191,11 +191,11 @@ $$ \vphantom{\frac{dN}{dt}} N_{t+1} = N_t + RN_t $$
 Exponential growth for `\(r = -0.25\)` and `\(N(1) = 10\)`:
 $$ \frac{dN}{dt} = rN $$
 
-&lt;img src="Lec2_3_DensIndGrowth_files/figure-html/unnamed-chunk-9-1.png" width="300" height="300" /&gt;
+&lt;img src="Lec02_03_DensIndGrowth_files/figure-html/unnamed-chunk-9-1.png" width="300" height="300" /&gt;
 ]
 ---
 # Note that continous time is always greater than discrete time
-&lt;img src="Lec2_3_DensIndGrowth_files/figure-html/unnamed-chunk-10-1.png" width="400" height="400" style="display: block; margin: auto;" /&gt;
+&lt;img src="Lec02_03_DensIndGrowth_files/figure-html/unnamed-chunk-10-1.png" width="400" height="400" style="display: block; margin: auto;" /&gt;
 ---
 class: inverse, center, middle
 # So I have a model, what do I do with it?
@@ -206,7 +206,7 @@ class: inverse, center, middle
 * Analyze it!
     * Simulate it
     * Solve it
-    * Find long term behavior
+    * Find long-term behavior
     * Determine behavior if perturbed
     * Make predictions
   
@@ -216,6 +216,155 @@ class: inverse, center, middle
     * Plot a time series of `\(t\)` and population size ( `\(N\)` )
     * Plot population size ( `\(N\)` ) and population growth `\(\frac{\Delta N}{\Delta t}\)`
     * Plot population size ( `\(N\)` ) and growth per individual (per-capita) `\(\frac{1}{N}\frac{\Delta N}{\Delta t}\)`
+    
+---
+# Analyze it!: simulation
+.pull-left[
+**Code and output** for discrete-time growth &lt;small&gt;(simulating it)&lt;/small&gt;:
+
+```r
+max.time &lt;- 20
+timesteps &lt;- 1:100
+N &lt;- vector(mode = "numeric", length = max.time)
+N[1] &lt;- 2
+R &lt;- 0.1
+for (i in 2:max.time) {
+  N[i] &lt;- N[i-1] + R*N[i-1]
+}
+round(N[1:3], 2)
+## [1] 2.00 2.20 2.42
+round(N[(max.time - 2):max.time], 2)
+## [1] 10.11 11.12 12.23
+```
+]
+
+.pull-right[
+**Code and output** for discrete-time growth &lt;small&gt;(not simulating it, but using the solution [simulating differential equations is a bit more involved])&lt;/small&gt;:
+
+```r
+N0 &lt;- 2
+r &lt;- 0.1
+timesteps &lt;- seq(0, 20, by = 1)
+len.time &lt;- length(timesteps)
+N &lt;- N0*exp(r*timesteps)
+round(N[1:3], 2)
+## [1] 2.00 2.21 2.44
+round(N[(len.time - 2):len.time], 2)
+## [1] 12.10 13.37 14.78
+```
+]
+
+---
+# Analyze it!: solve it
+
+.pull-left[
+**Discrete time**:
+`$$\begin{align}
+N_{t+1} &amp;= \lambda N_t \\
+N_{t+2} &amp;= \lambda N_{t+1} \\
+N_{t+2} &amp;= \lambda (\lambda N_t) \\
+N_{t+2} &amp;= \lambda ^2 N_t \\
+N_{t+3} &amp;= \lambda ^3 N_t \\
+... \\
+N_{t} &amp;= \lambda ^t N_0
+\end{align}$$`
+]
+--
+.pull-right[
+**Continuous time**:
+`$$\begin{align}
+\frac{dN}{dt} &amp;= rN \\
+\frac{1}{N}dN &amp;= r dt \\
+\int_{N(0)}^{N(T)} \frac{1}{N}dN &amp;= \int_{0}^{T} r dt \\
+\log _e(N)\Big|_{N(0)}^{N(T)} &amp;= rt\Big|_0^T \\
+\log _e\left(\frac{N(T)}{N(0)}\right) &amp;= rT \\
+N(T) &amp;= N(0)e^{rT}
+\end{align}$$`
+]
+
+---
+# Analyze it!: Find long-term behavior, determine behavior if perturbed, makre predictions
+Not too much happening with this simple, linear model:
+* Long-term behavior: continues to grow or shrink at a constant rate
+* Determinted behavior if perturbed: continues to grow or shrink at a constant rate
+* Make predictions: continues to grow or shrink at a constant rate
+---
+# Vizualize it!: Plot a time series &lt;small&gt;(already did it)&lt;/small&gt;
+.pull-left[
+Geometric growth for `\(R = 0.1\)` and `\(N_1 = 2\)`:
+$$ \vphantom{\frac{dN}{dt}} N_{t+1} = N_t + RN_t $$
+&lt;img src="Lec02_03_DensIndGrowth_files/figure-html/unnamed-chunk-13-1.png" width="300" height="300" /&gt;
+]
+
+--
+
+.pull-right[
+Exponential growth for `\(r = 0.1\)` and `\(N(1) = 2\)`:
+$$ \frac{dN}{dt} = rN $$
+
+&lt;img src="Lec02_03_DensIndGrowth_files/figure-html/unnamed-chunk-14-1.png" width="300" height="300" /&gt;
+]
+---
+# Vizualize it!: Plot population growth against density
+.pull-left[
+Geometric growth for `\(R = 0.1\)` and `\(N_1 = 2\)`:
+&lt;img src="Lec02_03_DensIndGrowth_files/figure-html/unnamed-chunk-15-1.png" width="300" height="300" /&gt;
+]
+--
+.pull-right[
+Exponential growth for `\(r = 0.1\)` and `\(N(1) = 2\)`:
+&lt;img src="Lec02_03_DensIndGrowth_files/figure-html/unnamed-chunk-16-1.png" width="300" height="300" /&gt;
+]
+---
+# Vizualize it!: Plot per-capita growth against density
+.pull-left[
+Geometric growth for `\(R = 0.1\)` and `\(N_1 = 2\)`:
+&lt;img src="Lec02_03_DensIndGrowth_files/figure-html/unnamed-chunk-17-1.png" width="300" height="300" /&gt;
+]
+--
+.pull-right[
+Exponential growth for `\(r = 0.1\)` and `\(N(1) = 2\)`:
+&lt;img src="Lec02_03_DensIndGrowth_files/figure-html/unnamed-chunk-18-1.png" width="300" height="300" /&gt;
+]
+---
+# Births and deaths as separate processes
+
+* Each density-indpendent model makes the assumption that `\(r\)` is unchanging—is this a reasonable assumption? Discuss and justify.
+
+--
+
+* In the beginning of the chapter there was a leitmotif on the maximum number of individuals that can exist before the next one squishes all of them to death. Out of my own morbid curiosity, please continue to work in paris and figure out (1) what the maximum human population can be and (2) how long it will take for humans to reach that point using the following data and a discrete model of growth?
+--
+.pull-left[
+&lt;div class="iframe_container"&gt;
+  &lt;iframe width="360" height="255" align="center" src="http://www.worldometers.info/world-population/" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;]
+.pull-right[
+![human pop growth](https://ourworldindata.org/wp-content/uploads/2013/05/updated-World-Population-Growth-1750-2100.png)
+]
+---
+# A note about a subsumption of *r*
+### *r* is the difference between births and deaths
+
+--
+
+Specific to our discrete-time density-independent models, this means:
+`$$N_{t+1} = N_t + RN_t = N_t + BN_t - DN_t$$`
+
+--
+
+And the solution would be:
+`$$N_t = N_0(1 + B - D)^t$$`
+
+--
+
+Specific to our continous-time density-independent models, this means:
+`$$\frac{dN}{dt} = rN = (b-d)N$$`
+
+--
+
+And the solution would be:
+`$$N(t) = N(0)e^{t(b - d)}$$`
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
