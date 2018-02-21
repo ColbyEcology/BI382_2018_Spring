@@ -31,6 +31,10 @@ Office phone: 207-859-5746
 Labs: M, 1—4:00 PM, in Olin 314  
 Lectures: TR, 9:30—10:45 AM, in Miller 205
 
+### Office hours
+W: 1:00–3:00 PM  
+F: 10:00 AM–12:00 PM
+
 ### Text
 * Required: *Population ecology: from first principles*, 2<sup>nd</sup> ed., 2013, by Vandermeer and Goldberg, Princeton University Press  
 * Optional: *A primer of ecology with R*, 2009, by Stevens, Springer Press
@@ -72,10 +76,11 @@ If you wish to speak confidentially about an incident of sexual misconduct, plea
 
 Students should be aware that faculty members are considered responsible employees; as such, if you disclose an incident of sexual misconduct to a faculty member, they have an obligation to report it to Colby’s Title IX Coordinator. “Disclosure” may include communication in-person, via email/phone/text, or through class assignments.
 
-To learn more about sexual misconduct or report an incident, visit [http://www.colby.edu/sexualviolence/](http://www.colby.edu/sexualviolence/){:target="_blank"}.
+To learn more about sexual misconduct or report an incident, visit 
+<a href="http://www.colby.edu/sexualviolence/" target="_blank">http://www.colby.edu/sexualviolence/</a>.
 
 <!---
 compiles page to pdf
 pandoc index.md --latex-engine=xelatex -V geometry:margin=1in -o Misc/Syllabus.pdf
 --->
-<small><a href="./Misc/Syllabus.pdf" download>Download this page as a .pdf, last updated 18 February 2017</a></small> 
+<small><a href="./Misc/Syllabus.pdf" download>Download this page as a .pdf, last updated 21 February 2017</a></small> 
