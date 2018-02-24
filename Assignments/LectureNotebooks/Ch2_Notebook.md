@@ -81,10 +81,12 @@ Given the projection matrix $$\Biggl[ \begin{smallmatrix}0&3&8&1 \\ 0.7&0&0&0 \\
 ### 2.15
 In a population of insects we find that there are, at a particular point in time, 1000 larvae, 50 pupae, and 5 adults. We find that after another census one month later we are able to estimate the probability of survival of a larva (assuming it remains a larva) as 0.7, the probability that the larva will turn into a pupa as 0.2, the probability that a pupa will survive as 0.1, the probability that the pupa will turn into an adult as 0.4, and the probability that an adult will survive as 0.5. Furthermore, an average adult produces 100 eggs, 50% of which appear (within that month) as larvae while the rest die. Construct the population matrix that takes into account all of these probabilities, and project the population one time unit (remember that the time unit is one month).
 
-> In markdown, here is how you create a vector: `$$\Biggl[ \begin{smallmatrix} x \\ y \\ z \end{smallmatrix}\Biggr]$$`  
+> In markdown, here is how you create a vector:  
+`$$\Biggl[ \begin{smallmatrix} x \\ y \\ z \end{smallmatrix}\Biggr]$$`  
 That looks like this: $$\Biggl[ \begin{smallmatrix} x \\ y \\ z \end{smallmatrix}\Biggr]$$.
 
-> In markdown, here is how you create a matrix: `$$\Biggl[ \begin{smallmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{smallmatrix}\Biggr]$$`.  
+> In markdown, here is how you create a matrix:  
+`$$\Biggl[ \begin{smallmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{smallmatrix}\Biggr]$$`.  
 That looks like this: $$\Biggl[ \begin{smallmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{smallmatrix}\Biggr]$$.
 
 ### 2.16
