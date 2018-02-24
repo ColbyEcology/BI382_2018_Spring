@@ -56,29 +56,45 @@ Using the projection matrix from exercise 2.4, begin with a population vector of
 
 ### 2.10
 ### 2.10 (I did it for you)
-Using the same projection matrix as in exercise 2.9, multiply the matrix by itsef 10 times. Recall that you estimated the intrinsic rate of natural increase as 0.5603 in exercise 2.9. Verify equation 8 by calculating the vector $\mathbf{N}_{t+1}$ from $\mathbf{P}^{10}\mathbf{N}_t$ and then from $\lambda ^10\mathbf{N}_t$, using the stable age distribution for $\mathbf{N}_t$ and then plotting the two calculations against one another. I have done it below:
+Using the same projection matrix as in exercise 2.9, multiply the matrix by itsef 10 times. Recall that you estimated the intrinsic rate of natural increase as 0.5603 in exercise 2.9. Verify equation 8 by calculating the vector $\mathbf{N}_{t+1}$ from $\mathbf{P}^{10}\mathbf{N}_t$ and then from $\lambda ^10\mathbf{N}_t$, using the stable age distribution for $\mathbf{N}_t$ and then plotting the two calculations against one another. I have done it below:  
 ```{r, fig.width = 4, fig.height = 4}
 proj.mat.n <- proj.mat4%*%proj.mat4%*%proj.mat4%*%proj.mat4%*%proj.mat4%*%proj.mat4%*%proj.mat4%*%proj.mat4%*%proj.mat4%*%proj.mat4%*%N0_2.9
 lambda.n <- exp(slope*10)*N0_2.9
 plot(x = proj.mat.n, y = lambda.n, las = 1, xlab = "Density using (projection matrix)^n", ylab = "Density using lambda^n", cex = 2, pch = 16)
   lines(x = proj.mat.n, y = lambda.n)
-```
+```  
 As proved in the book, $\mathbf{P}^n\mathbf{N}_t = \lambda ^n\mathbf{N}_t$. **Nothing to do here, but it's needed to evaluate eqn. 8 and for exercise 2.11.**
 
 ### 2.11
+Repeat the exercise 2.10 for the population vector $\Biggl[ \begin{smallmatrix}200 \\ 300 \\ 50 \\ 40\end{smallmatrix}\Biggr]$, which of course is not the stable age distribution.
 
 ### 2.12
+Given the projection matrix $\Bigl[ \begin{smallmatrix}0 & m \\ p & 0\end{smallmatrix}\Bigr]$, find the two eigenvalues analytically. (*Reference the penultimate equation before the exercise that gives the equation for a determinant of a 2-by-2 matrix.*)
 
 ### 2.13
+Given the projection matrix $\Bigl[ \begin{smallmatrix}0 & 0.3 \\ 0.9 & 0\end{smallmatrix}\Bigr]$, compute the eigenvalues by hand, the same way you did for exercise 2.11 (solving for $\lambda$). Beginning with $N_1 = 21.5$ and $N_2 = 23.6$, project the final matrix forward 30 times, plot the log of the total number against time, and estimate the rate of population growth from a line drawn on the plot. (*Recall from the previous chapter what the exponential rate of incrase looks like after taking a natural log.*) Does the estimate of the finite rate of population increase correspond to the computation of the dominant eigenvalue?
 
 ### 2.14
+Given the projection matrix $\Biggl[ \begin{smallmatrix}0&3&8&1 \\ 0.7&0&0&0 \\ 0&0.3&0&0 \\ 0&0&0.1&0  \end{smallmatrix}\Biggr]$, compute the eigenvalues. But, instead of doing it by hand, let's let our "computers" do the work for us. Use `eigen()` over your matrix. The first of the `$values` output is the dominant (also described as the largest in the book) eigenvalue, which is the finite rate of population increase! (Right?! I love computers!) Project the population starting with the population vector $\Biggl| \begin{smallmatrix}76 \\ 86 \\ 99 \\ 14  \end{smallmatrix}\Biggr|$, and directly estimate the dominant eigenvalue.
+
 
 ### 2.15
+In a population of insects we find that there are, at a particular point in time, 1000 larvae, 50 pupae, and 5 adults. We find that after another census one month later we are able to estimate the probability of survival of a larva (assuming it remains a larva) as 0.7, the probability that the larva will turn into a pupa as 0.2, the probability that a pupa will survive as 0.1, the probability that the pupa will turn into an adult as 0.4, and the probability that an adult will survive as 0.5. Furthermore, an average adult produces 100 eggs, 50% of which appear (within that month) as larvae while the rest die. Construct the population matrix that takes into account all of these probabilities, and project the population one time unit (remember that the time unit is one month).
+
+> In markdown, here is how you create a vector: `$\Biggl[ \begin{smallmatrix} x \\ y \\ z \end{smallmatrix}\Biggr]$`  
+That looks like this: $\Biggl[ \begin{smallmatrix} x \\ y \\ z \end{smallmatrix}\Biggr]$.
+
+> In markdown, here is how you create a matrix: `$\Biggl[ \begin{smallmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{smallmatrix}\Biggr]$`.  
+That looks like this: $\Biggl[ \begin{smallmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{smallmatrix}\Biggr]$.
 
 ### 2.16
+Project the population of exercise 2.15 ten times, and graph the total population over time. What is the rate of population increase?
 
 ### 2.17
+Plot the proportion of each state over time (in three different graphs).
 
 ### 2.18
+In a population of plants, we categorized individuals as small seedlings, large seedlings, small saplings, large saplings, and adults. Presuming that the plants in each stage either move to the next stage or stay in their own category during population growth, write the state projection matrix in general terms. (That is, fill out a matrix with values that would be 0 and which would not.)
 
 ### 2.19
+At another site this same population has slightly different growth patterns and the variability of its growth is very large, such that occasionall the small seedlings grow all the way to small saplings during a single time unit. Furthermore, because of the severe weather, occasionally a large sapling has its top damaged and actual reverts to the small sapling stage. Modify the matrix of exercise 2.18 to account for these probabilities.
