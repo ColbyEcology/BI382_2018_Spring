@@ -57,7 +57,7 @@ Using the projection matrix from exercise 2.4, begin with a population vector of
 ### 2.10
 ### 2.10 (I did it for you)
 Using the same projection matrix as in exercise 2.9, multiply the matrix by itsef 10 times. Recall that you estimated the intrinsic rate of natural increase as 0.5603 in exercise 2.9. Verify equation 8 by calculating the vector $\mathbf{N}_{t+1}$ from $\mathbf{P}^{10}\mathbf{N}_t$ and then from $\lambda ^10\mathbf{N}_t$, using the stable age distribution for $\mathbf{N}_t$ and then plotting the two calculations against one another. I have done it below:  
-```{r, fig.width = 4, fig.height = 4}
+```
 proj.mat.n <- proj.mat4%*%proj.mat4%*%proj.mat4%*%proj.mat4%*%proj.mat4%*%proj.mat4%*%proj.mat4%*%proj.mat4%*%proj.mat4%*%proj.mat4%*%N0_2.9
 lambda.n <- exp(slope*10)*N0_2.9
 plot(x = proj.mat.n, y = lambda.n, las = 1, xlab = "Density using (projection matrix)^n", ylab = "Density using lambda^n", cex = 2, pch = 16)
