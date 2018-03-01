@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SturcturedPopulations</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Christopher Moore" />
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# SturcturedPopulations
+## Adding demography to population models
+### Christopher Moore
+### 2018/03/01
+
+---
+
+
+
+
+# An outline of structured population models
+
+--
+
+* Age-structured populations
+  * A diversion on matrix math
+* Stage-structured populations
+* Sensitivity and elasticity
+
+---
+background-image: url(https://i.imgflip.com/25i7oj.jpg)
+class: inverse
+
+---
+# Age- structured populations
+
+--
+
+1. We have thus far examined how populations have changed assuming **the population is entirely homogeneous**
+
+--
+
+2. For many reasons, we might wish to more precisely model and analyze populations with respect to their age structure. That is, looking at the probabilities of survival and fecundity at each age.
+
+--
+
+* For simplifaction, we are working with discrete-time, discrete-age models
+
+---
+# The simplest case: two age classes
+
+* Imagine a species that lives for two years; e.g., a biennial plant. The seeds germinate at the beginning of the first year (year 0), and they leaf out and photosynthesize. During the second year (year 1), the plant flowers, sets seed, and dies.
+
+--
+
+* Verbally, the model that I just described could be more concisely written as:
+`$$\begin{align}\text{First-year plants = (# adults)*fecundity} \\
+\text{Second-year plants = First-year plants that survived}
+\end{align}$$`
+
+--
+
+* Let's play with some simple numbers:
+  * Let's say that the average adult plant `\((x_1)\)` produces 25 seeds `\((f = 25)\)` that germinate the following year
+  * Let's say that, on average, about 20% of first-year `\((x_2)\)` plants survive `\((p_{\text{survive from class 0 to 1}})\)` to the second year
+  * Lastly, if we initially had 5 and 2 individuals respectively of `\(x_1\)` and `\(x_2\)`
+
+--
+
+* Calculate, by hand, how many individuals would exist at each age after 5 years
+
+---
+# The simplest case: two age classes
+## Results
+
+.pull-left[
+t | `\(x_1\)` | `\(x_2\)` |
+--|:-:|:-:|
+0 | 5 | 2
+1 | 50 | 1
+2 | 25 | 10
+3 | 250 | 5
+4 | 125 | 50
+5 | 1250 | 25
+]
+
+--
+
+.pull-right[
+&lt;img src="Lec06_07_StrPops_files/figure-html/unnamed-chunk-1-1.png" width="450" height="400" /&gt;
+]
+
+---
+# The simplest case: two age classes
+## Results, with each age class
+
+.pull-left[
+
+t | `\(x_1\)` | `\(x_2\)` |
+--|:-:|:-:|
+0 | 5 | 2
+1 | 50 | 1
+2 | 25 | 10
+3 | 250 | 5
+4 | 125 | 50
+5 | 1250 | 25
+]
+
+.pull-right[
+&lt;img src="Lec06_07_StrPops_files/figure-html/unnamed-chunk-2-1.png" width="450" height="400" /&gt;
+]
+
+---
+# The condensed way: matrix operations
+From a few slides back:
+* Verbally, the model that I just described could be more concisely written as:
+`$$\begin{align}\text{First-year plants = (# adults)*fecundity} \\
+\text{Second-year plants = First-year plants that survived}
+\end{align}$$`
+
+--
+
+As a pair of equations, we can write
+`$$\begin{align}
+x_1(t+1) &amp;= 25x_2(t) \\
+x_2(t+1) &amp;= 0.2x_1(t)
+\end{align}$$`
+
+--
+
+which is the same as
+`$$\begin{align}
+x_1(t+1) &amp;= 0x_1(t) + 25x_2(t) \\
+x_2(t+1) &amp;= 0.2x_1(t) + 0x_2(t)
+\end{align}$$`
+
+---
+# The condensed way: matrix operations
+
+`$$\begin{align}
+x_1(t+1) &amp;= 0x_1(t) + 25x_2(t) \\
+x_2(t+1) &amp;= 0.2x_1(t) + 0x_2(t)
+\end{align}$$`
+--
+Can be represented as
+`$$\begin{bmatrix}
+x_1(t+1) \\
+x_2(t+1)
+\end{bmatrix}$$`
+---
+# The condensed way: matrix operations
+
+`$$\begin{align}
+x_1(t+1) &amp;= 0x_1(t) + 25x_2(t) \\
+x_2(t+1) &amp;= 0.2x_1(t) + 0x_2(t)
+\end{align}$$`
+
+Can be represented as
+`$$\begin{gather}\begin{bmatrix}
+x_1(t+1) \\
+x_2(t+1)
+\end{bmatrix} = \begin{bmatrix}
+0 &amp; 25 \\
+0.2 &amp; 0
+\end{bmatrix}\end{gather}$$`
+
+---
+# The condensed way: matrix operations
+
+`$$\begin{align}
+x_1(t+1) &amp;= 0x_1(t) + 25x_2(t) \\
+x_2(t+1) &amp;= 0.2x_1(t) + 0x_2(t)
+\end{align}$$`
+
+Can be represented as
+`$$\begin{gather}\begin{bmatrix}
+x_1(t+1) \\
+x_2(t+1)
+\end{bmatrix} = \begin{bmatrix}
+0 &amp; 25 \\
+0.2 &amp; 0
+\end{bmatrix}\begin{bmatrix}
+x_1(t) \\
+x_2(t)
+\end{bmatrix}\end{gather}$$`
+
+--
+
+Symbolically, this is (what would be) equation (1c) in V&amp;G:
+`$$\begin{gather}\begin{bmatrix}
+x_1(t+1) \\
+x_2(t+1)
+\end{bmatrix} = \begin{bmatrix}
+0 &amp; f_1 \\
+p_{10} &amp; 0
+\end{bmatrix}\begin{bmatrix}
+x_1(t) \\
+x_2(t)
+\end{bmatrix}\end{gather}$$`
+
+---
+# Structured populations models
+## With 3 age classes
+
+`$$\begin{gather}\begin{bmatrix}
+x_1(t+1) \\
+x_2(t+1) \\
+x_3(t+1)
+\end{bmatrix} = \begin{bmatrix}
+0 &amp; f_1 &amp; f_2 \\
+p_{10} &amp; 0 &amp; 0 \\
+0 &amp; p_{21} &amp; 0
+\end{bmatrix}\begin{bmatrix}
+x_1(t) \\
+x_2(t) \\
+x_3(t)
+\end{bmatrix}\end{gather}$$`
+
+---
+# Structured populations models
+## With 4 age classes
+
+`$$\begin{gather}\begin{bmatrix}
+x_1(t+1) \\
+x_2(t+1) \\
+x_3(t+1) \\
+x_4(t+1)
+\end{bmatrix} = \begin{bmatrix}
+0 &amp; f_1 &amp; f_2 &amp; f_3 \\
+p_{10} &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; p_{21} &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; p_{32} &amp; 0
+\end{bmatrix}\begin{bmatrix}
+x_1(t) \\
+x_2(t) \\
+x_3(t) \\
+x_4(t)
+\end{bmatrix}\end{gather}$$`
+
+---
+# Structured populations models
+## With arbitrary `\((n)\)` numers of age classes
+
+`$$\begin{gather}\begin{bmatrix}
+x_1(t+1) \\
+x_2(t+1) \\
+x_3(t+1) \\
+x_4(t+1) \\
+\vdots \\
+x_n(t+1)
+\end{bmatrix} = \begin{bmatrix}
+0 &amp; f_1 &amp; f_2 &amp; f_3 &amp; \dots &amp; f_{m-1} \\
+p_{10} &amp; 0 &amp; 0 &amp; 0  &amp; &amp; 0 \\
+0 &amp; p_{21} &amp; 0 &amp; 0 &amp; &amp; 0 \\
+0 &amp; 0 &amp; p_{32} &amp; 0 &amp; &amp; 0 \\
+\vdots &amp; &amp; &amp; \ddots &amp; &amp; \vdots \\
+0 &amp; \dots &amp; &amp; &amp; p_{n, m-1} &amp; 0
+\end{bmatrix}\begin{bmatrix}
+x_1(t) \\
+x_2(t) \\
+x_3(t) \\
+x_4(t) \\
+\vdots \\
+x_n(t)
+\end{bmatrix}\end{gather}$$`
+
+
+---
+# Some matrix math: notation
+Annotation in **bold** signifies that we are working with matrices.
+
+--
+
+For instance, the first, 2-age-class model
+`$$\begin{gather}\begin{bmatrix}
+x_1(t+1) \\
+x_2(t+1)
+\end{bmatrix} = \begin{bmatrix}
+0 &amp; f_1 \\
+p_{10} &amp; 0
+\end{bmatrix}\begin{bmatrix}
+x_1(t) \\
+x_2(t)
+\end{bmatrix}\end{gather}$$`
+
+can be written more concisely as
+
+`$$\mathbf{X(t+1) = PX(t)}$$`
+
+---
+# Some matrix math: multiplication
+It's important to note that a vector is a matrix with one column; e.g., as the depicted `\(\mathbf{x}\)` above.
+
+--
+
+Second, let's multiply a matrix times a vector by hand. Let's say you have a matrix that looks like this:
+`$$\begin{gather}
+? = \begin{bmatrix}
+0 &amp; 4 &amp; 8 \\
+0.1 &amp; 0 &amp; 0 \\
+0 &amp; 0.9 &amp; 0
+\end{bmatrix}\begin{bmatrix}
+6 \\
+4 \\
+2
+\end{bmatrix}\end{gather}$$`
+
+(Think about how you did this in the biennial-plant problem.)
+
+--
+
+`$$\begin{gather}\begin{bmatrix}
+6(0) + 4(4) + 2(8) \\
+6(0.1) + 4(0) + 2(0) \\
+6(0) + 4(0.9) + 2(0)
+\end{bmatrix} = \begin{bmatrix}
+0 &amp; 4 &amp; 8 \\
+0.1 &amp; 0 &amp; 0 \\
+0 &amp; 0.9 &amp; 0
+\end{bmatrix}\begin{bmatrix}
+6 \\
+4 \\
+2
+\end{bmatrix}\end{gather}$$`
+
+---
+# Some matrix math: multiplication
+It's important to note that a vector is a matrix with one column; e.g., as the depicted `\(\mathbf{x}\)` above.
+
+Second, let's multiply a matrix times a vector by hand. Let's say you havea matrix that looks like this:
+`$$\begin{gather}
+? = \begin{bmatrix}
+0 &amp; 4 &amp; 8 \\
+0.1 &amp; 0 &amp; 0 \\
+0 &amp; 0.9 &amp; 0
+\end{bmatrix}\begin{bmatrix}
+6 \\
+4 \\
+2
+\end{bmatrix}\end{gather}$$`
+
+(Think about how you did this in the biennial-plant problem.)
+
+`$$\begin{gather}\begin{bmatrix}
+32 \\
+0.6 \\
+3.6
+\end{bmatrix} = \begin{bmatrix}
+6(0) + 4(4) + 2(8) \\
+6(0.1) + 4(0) + 2(0) \\
+6(0) + 4(0.9) + 2(0)
+\end{bmatrix} = \begin{bmatrix}
+0 &amp; 4 &amp; 8 \\
+0.1 &amp; 0 &amp; 0 \\
+0 &amp; 0.9 &amp; 0
+\end{bmatrix}\begin{bmatrix}
+6 \\
+4 \\
+2
+\end{bmatrix}\end{gather}$$`
+---
+# Some matrix math: using R 😌 :relieved:
+First, build the projection matrix and population vector
+
+`$$\begin{gather}
+? = \begin{bmatrix}
+0 &amp; 4 &amp; 8 \\
+0.1 &amp; 0 &amp; 0 \\
+0 &amp; 0.9 &amp; 0
+\end{bmatrix}\begin{bmatrix}
+6 \\
+4 \\
+2
+\end{bmatrix}\end{gather}$$`
+
+--
+
+
+```r
+proj.mat &lt;- matrix(data = c(0, 0.1, 0, 4, 0, 0.9, 8, 0, 0), nrow = 3, ncol = 3)
+proj.mat
+##      [,1] [,2] [,3]
+## [1,]  0.0  4.0    8
+## [2,]  0.1  0.0    0
+## [3,]  0.0  0.9    0
+N.vec &lt;- matrix(data = c(6, 4, 2), nrow = 3, ncol = 1)
+N.vec
+##      [,1]
+## [1,]    6
+## [2,]    4
+## [3,]    2
+```
+
+---
+# Some matrix math: using R
+
+```r
+proj.mat*N.vec
+## Error in proj.mat * N.vec: non-conformable arrays
+```
+
+--
+
+
+```r
+proj.mat%*%N.vec
+##      [,1]
+## [1,] 32.0
+## [2,]  0.6
+## [3,]  3.6
+```
+
+This is matrix multiplication (AKA, the inner product)!
+
+--
+
+Also, it's important to note that matrix multiplication is non-commutative
+
+```r
+N.vec%*%proj.mat
+## Error in N.vec %*% proj.mat: non-conformable arguments
+```
+
+---
+# Projecting matrix models
+## Write a for loop for the matrix you just created
+
+--
+
+
+```r
+steps &lt;- 7
+N.mat &lt;- matrix(data = NA, ncol = steps, nrow = length(N.vec))
+N.mat[,1] &lt;- N.vec
+for (i in 2:steps){
+  N.mat[,i] &lt;- proj.mat%*%N.mat[,i-1]
+}
+```
+
+--
+
+To sum across columns, use the `apply()` function
+
+
+```r
+sumN &lt;- apply(X = N.mat, MARGIN = 2, FUN = sum)
+sumN
+## [1] 12.0000 36.2000 34.9400 23.1200 40.0400 34.4048 32.6624
+```
+
+(The MARGIN = 2 means apply the function over the columns; to apply a funciton over rows use MARGIN = 1)
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
