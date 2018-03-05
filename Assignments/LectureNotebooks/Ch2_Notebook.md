@@ -35,7 +35,7 @@ supopose the population is introduced onto an island with 10 of the oldest indiv
 Using the projection matrix in exercise 2.4, suppose the population is introduced onto an island with 10 of the third-oldest age category. Project the population 20 times, and graph the total number over time. Compare to the results of exercise 2.4.
 
 ### 2.6
-Using the results from exercise 2.5, calculate the ratio of the number of individulas in age category 2 to those in category 2, and plot the ratio over time. Do the same for age categories 4 and 3. What do you notice?
+Using the results from exercise 2.5, calculate the ratio of the number of individulas in age category 2 to those in category 1, and plot the ratio over time. Do the same for age categories 4 and 3. What do you notice?
 
 ### 2.7
 Consider the following projection matrix representing a population with five age classes:
