@@ -36,7 +36,7 @@ Week |  Date  | Meeting |     Topic                                             
      |        | Lecture | Density dependent change                                       | VG: ch.1, pp. 9–29  | [Notebook 1](../Assignments/LectureNotebooks/Ch1_Notebook), [Key](../Assignments/LectureNotebooks/Ch1_Notebook_key.html){:target="_blank"}  | [DensDep&Delta;](../Presentations/Lec04_05_DensDep.html){:target="_blank"}
 03   | 26 Feb |   Lab   | Model solutions: solving numerically in R                      |                     | [Lab report 3](../Assignments/LabReports/LabReport_3.html){:target="_blank"}, [Key](../Assignments/LabReports/LabReport_3_key.html){:target="_blank"} |
      |        | Lecture | Structured population models                                   | VG: ch.2, pp. 30–45 | [Notebook 2](../Assignments/LectureNotebooks/Ch2_Notebook) | [StrPops](../Presentations/Lec06_07_StrPops.html){:target="_blank"}
-04   | 05 Mar |   Lab   | Ecological experiment 1: single-species population growth      |                     | |
+04   | 05 Mar |   Lab   | Ecological experiment 1: single-species population growth      |                     | [Lab report 3](../Assignments/LabExperiments/LabExperiment1.html){:target="_blank"} |
      |        | Lecture | ~~Model applications~~                                         | ~~VG: ch.3~~        | <span style="color:#788bbb">Notebook 3</span> |
 05   | 12 Mar |   Lab   | Parameter estimation in R: least square methods                |                     | <span style="color:#b4b9c2">Experiment 1</span> |
      |        | Lecture | Dynamical systems                                              | VG: ch.4            | <span style="color:#788bbb">Notebook 4</span> |
