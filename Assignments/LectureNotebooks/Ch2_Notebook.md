@@ -54,7 +54,6 @@ Repeat exercise 2.7, but begin with 80, 16, 5, 1, and 1 individuals. Compare the
 ### 2.9
 Using the projection matrix from exercise 2.4, begin with a population vector of 674, 263, 47, 3 (the stable age distribution), and project the population 10 time units. Plot the natural log of the total population density against time. Then calculate the rate of natural increase from this graph.
 
-### 2.10
 ### 2.10 (I did it for you)
 Using the same projection matrix as in exercise 2.9, multiply the matrix by itsef 10 times. Recall that you estimated the intrinsic rate of natural increase as 0.5603 in exercise 2.9. Verify equation 8 by calculating the vector $\mathbf{N}_{t+1}$ from $\mathbf{P}^{10}\mathbf{N}_t$ and then from $\lambda ^10\mathbf{N}_t$, using the stable age distribution for $\mathbf{N}_t$ and then plotting the two calculations against one another. I have done it below:  
 ```
