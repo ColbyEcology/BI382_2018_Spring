@@ -18,7 +18,9 @@ Repeat exercise 4.1 wth $ r= -0.1$, but use a time frame of 0 to 100. Describe w
 
 ### 4.3
 Recall the population model of the Ricker equation from chapter 1
+
 $$N_{t+1} = rN_t\exp(1 - bN_t)$$.
+
 Let $r = 2.5$ and $b = 2.5$ and project the population 45 times units, beginning with an initial population size of 0.01. What is the pattern of the time series (don't forget this is a discrete-time equation)?
 
 ### 4.4 (skip)
