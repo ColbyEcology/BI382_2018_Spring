@@ -39,7 +39,7 @@ Week |  Date  | Meeting |     Topic                                             
 04   | 05 Mar |   Lab   | Ecological experiment 1: single-species population growth      |                     | [Lab experiment 1](../Assignments/LabExperiments/LabExperiment1.html){:target="_blank"} |
      |        | Lecture | ~~Model applications~~                                         | ~~VG: ch.3~~ [Mallet 2012, pp. 627–638](https://mallet.oeb.harvard.edu/files/malletlab/files/mallet_the_struggle_2012.pdf){:target="_blank"} | ~~<span style="color:#788bbb">Notebook 3</span>~~ [Remodeling Project, Part I](../Assignments/RemodelingProject/RemodelingPrject_LitSearch.html){:target="_blank"} |
 05   | 12 Mar |   Lab   | Parameter estimation in R: least square methods                |                     | [Reading pp. 1–12](../Misc/Bonsall_and_Hassell_2005.pdf){:target="_blank"}, Experiment 1 analysis |
-     |        | Lecture | Dynamical systems                                              | VG: ch.4, pp. 81–97 & 116–125 | <span style="color:#788bbb">Notebook 4</span> |
+     |        | Lecture | Dynamical systems                                              | VG: ch.4, pp. 81–97 & 116–125 | [Notebook 4](../Assignments/LectureNotebooks/Ch4_Notebook) |
 06   | 19 Mar |   Lab   | Spatial modeling: lattice-based models                         |                     | <span style="color:#002878">Lab report 4</span> |
      |        | Lecture | Spatial patterns and dynamics                                  | VG: ch.5            | <span style="color:#788bbb">Notebook 5</span> |
 07   | 02 Apr |   Lab   | Remodeling project presentations: proposal                     |                     | Remodeling proposal |
