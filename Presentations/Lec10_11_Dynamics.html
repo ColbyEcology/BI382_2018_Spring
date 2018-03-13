@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Dynamical systems</title>
+    <title>Dynamics</title>
     <meta charset="utf-8">
     <meta name="author" content="Christopher Moore" />
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
@@ -11,7 +11,7 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Dynamical systems
+# Dynamics
 ### Christopher Moore
 ### 2018/03/13&amp;15
 
@@ -21,35 +21,35 @@ class: center, middle, inverse, title-slide
 
 
 # Time series for each group
-![](Lec10_11Dynamics_files/figure-html/unnamed-chunk-1-1.png)&lt;!-- --&gt;
+![](Lec10_11_Dynamics_files/figure-html/unnamed-chunk-1-1.png)&lt;!-- --&gt;
 
 ---
 
 # Population growth for each group
-![](Lec10_11Dynamics_files/figure-html/unnamed-chunk-2-1.png)&lt;!-- --&gt;
+![](Lec10_11_Dynamics_files/figure-html/unnamed-chunk-2-1.png)&lt;!-- --&gt;
 
 ---
 
 # Per capita growth for each group
-![](Lec10_11Dynamics_files/figure-html/unnamed-chunk-3-1.png)&lt;!-- --&gt;
+![](Lec10_11_Dynamics_files/figure-html/unnamed-chunk-3-1.png)&lt;!-- --&gt;
 
 ---
 
 # Class data time series
 
-![](Lec10_11Dynamics_files/figure-html/unnamed-chunk-4-1.png)&lt;!-- --&gt;
+![](Lec10_11_Dynamics_files/figure-html/unnamed-chunk-4-1.png)&lt;!-- --&gt;
 
 ---
 
 # Class data: population growth v. density
 
-![](Lec10_11Dynamics_files/figure-html/unnamed-chunk-5-1.png)&lt;!-- --&gt;
+![](Lec10_11_Dynamics_files/figure-html/unnamed-chunk-5-1.png)&lt;!-- --&gt;
 
 ---
 
 # Class data: per-capita growth v. density
 
-![](Lec10_11Dynamics_files/figure-html/unnamed-chunk-6-1.png)&lt;!-- --&gt;
+![](Lec10_11_Dynamics_files/figure-html/unnamed-chunk-6-1.png)&lt;!-- --&gt;
 
 ---
 # Fitting models to data: simulation
@@ -74,7 +74,7 @@ out &lt;- ode(y = N0, times = time.seq, func = log.mod, parms = parameters)
 --
 
 .pull-right[
-![](Lec10_11Dynamics_files/figure-html/unnamed-chunk-8-1.png)&lt;!-- --&gt;
+![](Lec10_11_Dynamics_files/figure-html/unnamed-chunk-8-1.png)&lt;!-- --&gt;
 *Dots are the observed data*
 ]
 ---
@@ -170,7 +170,7 @@ plot(x = out.b[,1], y = out.b[,2], las = 1, lwd = 2, xlab = "Time", ylab = "Dens
 plot(x = out.c[,1], y = out.c[,2], las = 1, lwd = 2, xlab = "Time", ylab = "Density (N)", type = "l")
 ```
 
-![](Lec10_11Dynamics_files/figure-html/unnamed-chunk-10-1.png)&lt;!-- --&gt;
+![](Lec10_11_Dynamics_files/figure-html/unnamed-chunk-10-1.png)&lt;!-- --&gt;
 
 ---
 # Allee population change
@@ -188,7 +188,7 @@ lines(x = Ns, y = pop.change, lwd = 2, col = "red")
 ]
 
 .pull-right[
-![](Lec10_11Dynamics_files/figure-html/unnamed-chunk-12-1.png)&lt;!-- --&gt;
+![](Lec10_11_Dynamics_files/figure-html/unnamed-chunk-12-1.png)&lt;!-- --&gt;
 ]
 
 
@@ -208,7 +208,7 @@ lines(x = Ns, y = pc.change, lwd = 2, col = "red")
 ]
 
 .pull-right[
-![](Lec10_11Dynamics_files/figure-html/unnamed-chunk-14-1.png)&lt;!-- --&gt;
+![](Lec10_11_Dynamics_files/figure-html/unnamed-chunk-14-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -216,7 +216,7 @@ lines(x = Ns, y = pc.change, lwd = 2, col = "red")
 
 Only changing `\(A\)` (from `\(10^0\)` to `\(10^1\)`)
 
-![](Lec10_11Dynamics_files/figure-html/unnamed-chunk-15-1.png)&lt;!-- --&gt;
+![](Lec10_11_Dynamics_files/figure-html/unnamed-chunk-15-1.png)&lt;!-- --&gt;
 
 ---
 # Allee effects: analytically determinting stability
