@@ -214,9 +214,17 @@ lines(x = Ns, y = pc.change, lwd = 2, col = "red")
 ---
 # Allee population change
 
-Only changing `\(A\)` (from `\(10^0\)` to `\(10^1\)`)
+Only changing `\(A\)` (from 2 to 10) to make Allee effect stronger
 
 ![](Lec10_11_Dynamics_files/figure-html/unnamed-chunk-15-1.png)&lt;!-- --&gt;
+
+---
+# Allee population change
+
+Only changing `\(A\)` (0 to 2) to make Allee effect weaker
+
+![](Lec10_11_Dynamics_files/figure-html/unnamed-chunk-16-1.png)&lt;!-- --&gt;
+
 
 ---
 # Allee effects: analytically determinting stability
@@ -273,7 +281,7 @@ Evaluating at `\(N^* = K\)`:
 --
 
 The solution:
-`$$r\left(\frac{K-A}{A}\right)$$`
+`$$-r\left(\frac{K-A}{A}\right)$$`
 If `\(&lt;0\)`, then the point is stable; if `\(&gt;0\text{, then the point it unstable}\)`.
 
 ---
@@ -286,12 +294,12 @@ The derivative:
 --
 
 Evaluating at `\(N^* = K\)`:
-`$$\frac{d\frac{dN}{dt}}{dN}\Bigg|_{N^*=K} = r\left(\frac{K-A}{K}\right)\left(\frac{A - A}{A}\right) + r(A)\left(\frac{-1}{K}\right)\left(\frac{A - A}{A}\right) + r(A)\left(\frac{K-A}{K}\right)\left(\frac{1}{A}\right)$$`
+`$$\frac{d\frac{dN}{dt}}{dN}\Bigg|_{N^*=A} = r\left(\frac{K-A}{K}\right)\left(\frac{A - A}{A}\right) + r(A)\left(\frac{-1}{K}\right)\left(\frac{A - A}{A}\right) + r(A)\left(\frac{K-A}{K}\right)\left(\frac{1}{A}\right)$$`
 
 --
 
 The solution:
-`$$-r\left(\frac{K-A}{A}\right)$$`
+`$$r\left(\frac{K-A}{A}\right)$$`
 If `\(&lt;0\)`, then the point is stable; if `\(&gt;0\text{, then the point it unstable}\)`.
 
 ---
@@ -300,11 +308,11 @@ If `\(&lt;0\)`, then the point is stable; if `\(&gt;0\text{, then the point it u
 
 --
 
-2. At `\(N^* = K\)`, if `\(r\left(\frac{K-A}{A}\right)\)` is positive (births are greater than deaths, and the Allee threshold is less than the carrying capacity), the equilibrium point is stable.
+2. At `\(N^* = K\)`, if `\(-r\left(\frac{K-A}{A}\right)\)` is positive (births are greater than deaths, and the Allee threshold is less than the carrying capacity), the equilibrium point is stable.
 
 --
 
-3. At `\(N^* = A\)`, if `\(-r\left(\frac{K-A}{A}\right)\)` is negative (births are greater than deaths, and the Allee threshold is less than the carrying capacity), the equilibrium point is unstable. Notice that it's the same as (2.), but as the opposite sign. This should make sense when thinking about it graphically, where the curve slopes must have opposite signs for adjacent equilibria.
+3. At `\(N^* = A\)`, if `\(r\left(\frac{K-A}{A}\right)\)` is negative (births are greater than deaths, and the Allee threshold is less than the carrying capacity), the equilibrium point is unstable. Notice that it's the same as (2.), but as the opposite sign. This should make sense when thinking about it graphically, where the curve slopes must have opposite signs for adjacent equilibria.
 
 
 ---
