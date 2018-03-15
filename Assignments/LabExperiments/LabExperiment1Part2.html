@@ -154,9 +154,9 @@ MathJax.Hub.Config({
 <p>Next, subset the class data for just your data. First, you must extrapolate the number of cells found in each of the large squares. I’d multiply each large-square column by the appropriate fraction and save it as a column in the dataframe (e.g., if your dataframe is called <code>data</code>, then <code>data$[name] &lt;- [any vector with the same number of elements as there are rows in the dataframe]</code>). Then, take the mean of the new columns, which gives you the number of cells per large square at each time that you measured.</p>
 <p>Create a time series of your data. Plot density against how much the population growth (assume the time intervals were the same between all of your sampling events). Plot ensity against how much the per-capita growth. Make sure to include these graphs in your paper.</p>
 </div>
-<div id="parameter-estimation-and-model-selection" class="section level4">
-<h4>Parameter estimation and model selection</h4>
-<p>We wish to determine the fit for the following models:</p>
+<div id="parameter-estimation-and-model-selection-skip" class="section level4">
+<h4>Parameter estimation and model selection (SKIP)</h4>
+<p><del>We wish to determine the fit for the following models:</del></p>
 <p><span class="math display">\[\begin{align}\frac{dN}{dt} &amp;= Nr \\
 \frac{dN}{dt} &amp;= N\left(r - b\log(N)\right) \\
 \frac{dN}{dt} &amp;= N\left(r - \log (1 + aN) \right) \\
@@ -165,11 +165,12 @@ MathJax.Hub.Config({
 \frac{dN}{dt} &amp;= N\left(r - b\log(1 + aN) \right) \\
 \frac{dN}{dt} &amp;= N\left(r - log(1 + (aN)^b) \right)
 \end{align}\]</span></p>
-<p>To do this, first, fit parameters for each model, then compare them using <code>AIC()</code>. This will be shown on the board in class.</p>
+<p><del>To do this, first, fit parameters for each model, then compare them using <code>AIC()</code>. This will be shown on the board in class.</del></p>
 </div>
 </div>
 <div id="paper" class="section level3">
 <h3>Paper</h3>
+<p><strong>Please see the lecture slides from Tuesday for the most updated paper description.</strong></p>
 <p>I want you to write the paper in the IMRaD format (<strong>I</strong>ntroduction, <strong>M</strong>ethods, <strong>R</strong>esults, and <strong>D</strong>iscussion), and without figures it should be between 2 and 3 pages. For the introduction, I would like to 2-to-3 paragraphs on single-species population growth and density dependence, concluding with your hypotheses and predictions. The methods should include two sections on the “Laboratory experiment” and “Data analysis”. The results can be 1-to-2 paragraphs on the findings. Lastly, the discussion should be your interpretation of your hypotheses and other aspects of the Experiment that you see fit. Outside sources are helpful, but not necessarily necessary.</p>
 </div>
 </div>
