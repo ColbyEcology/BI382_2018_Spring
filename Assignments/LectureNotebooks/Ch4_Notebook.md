@@ -10,7 +10,7 @@ layout: assignment
 ### 4.1
 The integrated logistic equation is
 
-$$N(t) = \frac{KN(0)}{(K - N(0)\exp(-rt) + N(0))}$$
+$$N(t) = \frac{KN(0)}{(K - N(0))\exp(-rt) + N(0))}$$
 
 Use this equation to generate a time series of $N$ versus $t$. Use parameters $r = 1.5$, $K = 100$
 
