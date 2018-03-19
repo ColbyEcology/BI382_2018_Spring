@@ -151,7 +151,7 @@ $(document).ready(function () {
 <p>With these rules, the simulations were able to show complex behaviors. Some of the recurrent congigurations include static states, oscillating states (with varying periodicity), and repetitive states that “move” across the grid. Further, the persistence of the siimulation depends on the initial conditions: how many live cells exist and their location relative to one another.</p>
 <p>Below I have written a version of The Game of Life. It is not the most computationally efficient (it can be written much faster) nor condensed, but, I hope, it is the most student/human-readable code.</p>
 <p>1.2. I would like for you to have an understanding of how this is fomulated. Please translate the code verbally. That is, I would like for you to determine what is happening “under the hood” for the automaton, and summarize. You don’t need to translate the first line (beginning with <code>par()</code>) nor the last 7 lines (beginning with <code>plot()</code>).</p>
-<pre class="r"><code>  par(mfrow = c(6, 6), mar = c(1, 1, 1, 1)
+<pre class="r"><code>  par(mfrow = c(6, 6), mar = c(1, 1, 1, 1))
   rec.rows &lt;- 25
   rec.cols &lt;- 25
   timesteps &lt;- 36
