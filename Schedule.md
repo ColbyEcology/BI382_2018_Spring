@@ -41,7 +41,7 @@ Week |  Date  | Meeting |     Topic                                             
 05   | 12 Mar |   Lab   | Parameter estimation in R: least square methods                |                     | [Reading pp. 1–12](../Misc/Bonsall_and_Hassell_2005.pdf){:target="_blank"}, [Lab experiment 1, part II](../Assignments/LabExperiments/LabExperiment1Part2.html){:target="_blank"} |
      |        | Lecture | Dynamics                                                       | VG: ch.4, pp. 81–97 & 116–125 | [Notebook 4](../Assignments/LectureNotebooks/Ch4_Notebook) | [Dynamics](../Presentations/Lec10_11_Dynamics.html){:target="_blank"}
 06   | 19 Mar |   Lab   | Spatial modeling: lattice-based models                         |                     | [Lab report 4](../Assignments/LabReports/LabReport_4.html){:target="_blank"} |
-     |        | Lecture | Spatial patterns and dynamics                                  | VG: ch.5            | [Notebook 5](../Assignments/LectureNotebooks/Ch5_Notebook) |
+     |        | Lecture | Spatial patterns and dynamics                                  | VG: ch.5            | [Notebook 5](../Assignments/LectureNotebooks/Ch5_Notebook) | [Space](../Presentations/Lec12_13_Space.html){:target="_blank"}
 07   | 02 Apr |   Lab   | Remodeling project presentations: proposal                     |                     | Remodeling proposal |
      |        | Lecture | Predator-prey/Consumer-resourse interactions                   | VG: ch.6            | <span style="color:#788bbb">Notebook 6</span> |
 08   | 09 Apr |   Lab   | Ecological experiment 2: predators and prey in virtual reality |                     | |
