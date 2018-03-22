@@ -42,7 +42,7 @@ Week |  Date  | Meeting |     Topic                                             
      |        | Lecture | Dynamics                                                       | VG: ch.4, pp. 81–97 & 116–125 | [Notebook 4](../Assignments/LectureNotebooks/Ch4_Notebook) | [Dynamics](../Presentations/Lec10_11_Dynamics.html){:target="_blank"}
 06   | 19 Mar |   Lab   | Spatial modeling: lattice-based models                         |                     | [Lab report 4](../Assignments/LabReports/LabReport_4.html){:target="_blank"} |
      |        | Lecture | Spatial patterns and dynamics                                  | VG: ch.5            | [Notebook 5](../Assignments/LectureNotebooks/Ch5_Notebook) | [Space](../Presentations/Lec12_13_Space.html){:target="_blank"}
-07   | 02 Apr |   Lab   | Remodeling project presentations: proposal                     |                     | Remodeling proposal |
+07   | 02 Apr |   Lab   | Remodeling project presentations: proposal                     |                     | [Remodeling Project, Part II](../Assignments/RemodelingProject/RemodelingPrject_ProposalPres.html){:target="_blank"} |
      |        | Lecture | Predator-prey/Consumer-resourse interactions                   | VG: ch.6            | <span style="color:#788bbb">Notebook 6</span> |
 08   | 09 Apr |   Lab   | Ecological experiment 2: predators and prey in virtual reality |                     | |
      |        | Lecture | Disease ecology		           	                             | VG: ch.7            | <span style="color:#788bbb">Notebook 7</span> |
