@@ -132,6 +132,105 @@ We arrive at
 
 `$$\LARGE
 \frac{dp}{dt} = mp(1 - p) - ep$$`
+
+---
+# The Levins metapopulation model
+## Analysis
+
+1. Simulate it using numerical solvers, and vizualize it
+2. Plot rate of change as a function of `\(p\)`
+3. Find equilibria `\(\left(\frac{dp}{dt} = 0\right)\)`
+4. Determine behavior around each equilibria
+
+---
+# The Levins metapopulation model
+1.Simulate it using numerical solvers, and vizualize it
+
+Ideally, we'd simulate it across all values of our parameters, including `\(m\)`, `\(e\)`, and `\(p(0)\)` ( `\(p\)` at time 0). Ignoring `\(p(0)\)`, let's just look at how `\(m\)` and `\(e\)` affect the population size after some time in the future: let's say after 1000 time units. See the next slide for the R code.
+
+---
+# The Levins metapopulation model
+
+
+```r
+# Set up and solve (but not p(0) I am going to loop over all my values of m and e)
+time.seq &lt;- seq(from = 0, to = 100, by = 0.5)
+m &lt;- seq(0, 1, by = 0.01)
+e &lt;- seq(0, 1, by = 0.01)
+p0 &lt;- 0.5
+
+Levins &lt;- function(t, p, parms) {
+  with(as.list(c(p, parms)), {
+    dpdt &lt;- m*p*(1 - p) - e*p
+    return(list(dpdt))
+  })
+}
+
+p.mat &lt;- matrix(data = NA, nrow = length(m), ncol = length(e))
+
+for (i in 1:length(m)) {
+  for (j in 1:length(e)) {
+    loop.parms &lt;- c(m = m[i], e = e[j])
+    out &lt;- ode(y = p0, times = time.seq, func = Levins, parms = loop.parms)
+    p.mat[i, j] &lt;- out[length(time.seq), 2]
+  }
+}
+```
+
+---
+# The Levins metapopulation model
+Visualizing the plot (dark colors means that the proportion of occupied patches are near 0, and light colors mean the proportion of occupied patches are near 1)
+
+```r
+image(x = m, y = e, z = p.mat, las = 1, col = viridis::viridis(n = 100, option = "B"))
+```
+
+![](Lec12_13_Space_files/figure-html/unnamed-chunk-7-1.png)&lt;!-- --&gt;
+
+---
+# The Levins metapopulation model
+2.Plot rate of change as a function of `\(p\)` (with arbitraty `\(e\)` and `\(m\)` values, except that `\(m &gt;e\)`)
+.pull-left[
+
+```r
+ps &lt;- seq(from = 0, to = 1, by = 0.01)
+e &lt;- 0.1
+m &lt;- 0.8
+dpdt &lt;- m*ps*(1 - ps) - e*ps
+```
+
+
+```r
+plot(x = ps, y = dpdt, las = 1, type = "n", xlab = "p", ylab = "dp/dt")
+segments(x0 = -1, y0 = 0, x1 = 2, y1 = 0, col = "grey50")
+segments(y0 = -1, x0 = 0, y1 = 2, x1 = 0, col = "grey50")
+lines(x = ps, y = dpdt, lwd = 2, col = "red")
+```
+]
+
+.pull-right[
+![](Lec12_13_Space_files/figure-html/unnamed-chunk-10-1.png)&lt;!-- --&gt;
+]
+
+---
+# The Levins metapopulation model
+3.Find equilibria `\(\left(\frac{dp}{dt} = 0\right)\)`
+`$$\begin{aligned}
+0 &amp;= mp(1 - p) - ep \\
+0 &amp;= p(m - mp - e) \\
+p^* &amp;= 0\text{, and } p^* = \frac{m-e}{m}
+\end{aligned}$$`
+
+---
+# The Levins metapopulation model
+4.Determine behavior around each equilibria
+
+First, find the derivative of the differential equation. Second, evaluate it at each equilibrium to determinte the slope at each point.
+`$$\frac{d(mp(1 - p) - ep)}{dp} = m - 2mp - e$$`
+
+1. `$$\left.\frac{d(mp(1 - p) - ep)}{dp}\right|_{p^* = 0} = m -2m(0) - e = m - e$$`
+
+2. `$$\left.\frac{d(mp(1 - p) - ep)}{dp}\right|_{p^* = 0} = m -2m\left(\frac{m-e}{m}\right) - e = e - m$$`
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
