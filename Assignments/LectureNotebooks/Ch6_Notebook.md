@@ -8,7 +8,7 @@ layout: assignment
 
 This Notebook will help familiarize you with the different types of qualitative dynamics of mostly predator-prey and consumer-resource models, but also a few others. Essentially, I am asking you to make a time series, a phase plane, and find the nullclines for different models. Although we are just learning them in week 7, we will be studying them in more depth weeks 8 through 10.
 
-**You probably want to suppress the out[ut of the `phaseR` functions. Although there are different ways of doing this, the simplest way is to assign the function to an object. E.g., `a <- nullclines(...)` of `a <- flowField(...)` will still plot (what you want) but the text output will be saved and not printed to your Knitted output..**
+**You probably want to suppress the output of the `phaseR` functions. Although there are different ways of doing this, the simplest way is probably to assign the function to an object. E.g., `a <- nullclines(...)` or `a <- flowField(...)` will still plot (what you want) but the text output will be saved and not printed to your Knitted output.**
 
 ### 6A
 #### Neutralism
