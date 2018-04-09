@@ -4,7 +4,7 @@ layout: assignment
 ---
 
 # Exercises based on Vandermeer and Goldberg
-**Due 08 April 2018**
+**Due 09 April 2018**
 
 This Notebook will help familiarize you with the different types of qualitative dynamics of mostly predator-prey and consumer-resource models, but also a few others. Essentially, I am asking you to make a time series, a phase plane, and find the nullclines for different models. Although we are just learning them in week 7, we will be studying them in more depth weeks 8 through 10.
 
