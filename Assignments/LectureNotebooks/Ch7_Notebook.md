@@ -7,10 +7,10 @@ layout: assignment
 **Due 16 April 2018**
 
 ### 6G
-Plot a time series, phase plane, and describe the 4 nullclines for a predator-prey model where prey grow exponentially, the predation rate follows a Type II functional response, and predators have a constant death rate (pgs. 164 and 165 from V&G). Use parameter values $r = 1.1$, $g = 1$, $c = 3$, and $m = 1$. Also, add a `trajectory()` line, starting near the interior equilibrium. What happens?
+Plot a time series, phase plane, and describe the 4 nullclines for a predator-prey model where prey grow exponentially, the predation rate follows a Type II functional response, and predators have a constant death rate (pgs. 164 and 165 from V&G). Use parameter values $r = 1.1$, $g = 1$, $c = 3$, and $m = 1$. Also, add a `trajectory()` curve, starting near the interior equilibrium. What happens?
 
 ### 6H
-Plot 3 time series(es?), 3 phase planes, and describe the 4 nullclines for a predator-prey model where prey grow logistically, the predation rate follows a Type II functional response, and predators have a constant death rate (pg. 166 from V&G). Use parameter values $r = 1.5$, $K = 10$, $c = 1$, and $g = 3$. The parameter that I would like for you to vary across the three is $m$, which I would like you to set to 0.66, 0.5, and 0.45.
+Plot 3 time series(es?), 3 phase planes, and describe the 4 nullclines for a predator-prey model where prey grow logistically, the predation rate follows a Type II functional response, and predators have a constant death rate (pg. 166 from V&G). Use parameter values $r = 1.5$, $K = 10$, $c = 1$, and $g = 3$. The parameter that I would like for you to vary across the three is $m$, which I would like you to set to 0.66, 0.5, and 0.45. Also add a `trajectory()` curve and make sure to start from the same densities for the three simulations.
 
 Verbally describe the differences between the three.
 
