@@ -45,7 +45,7 @@ Week |  Date  | Meeting |     Topic                                             
 07   | 02 Apr |   Lab   | Remodeling project presentations: proposal                     |                     | [Remodeling Project, Part II](../Assignments/RemodelingProject/RemodelingPrject_ProposalPres.html){:target="_blank"} |
      |        | Lecture | Predator-prey/Consumer-resourse interactions                   | VG: ch.6            | [Notebook 6](../Assignments/LectureNotebooks/Ch6_Notebook) | [C-R ints.](../Presentations/Lec14_15_PredatorPrey.html){:target="_blank"}
 08   | 09 Apr |   Lab   | Ecological experiment 2: predators and prey in virtual reality |                     | | [Raw data](../Assignments/LabExperiments/Experiment2/Pigmemberment_Raw.zip), [Clean data](../Assignments/LabExperiments/Experiment2/Pigmemberment_Clean.zip)
-     |        | Lecture | Disease ecology		           	                             | VG: ch.7            | [Notebook 7](../Assignments/LectureNotebooks/Ch7_Notebook) | [Diease Dyn.](../Presentations/Lec16_17_Disease.html){:target="_blank"}
+     |        | Lecture | Disease ecology		           	                             | VG: ch.7            | [Notebook 7](../Assignments/LectureNotebooks/Ch7_Notebook) | [Disease Dyn.](../Presentations/Lec16_17_Disease.html){:target="_blank"}
 09   | 16 Apr |   Lab   | Parameter estimation in R: maximum likelihood                  |                     | <span style="color:#b4b9c2">Experiment 2</span> |
      |        | Lecture | Competition  				                                     | VG: ch.8            | <span style="color:#788bbb">Notebook 8</span> |
 10   | 23 Apr |   Lab   | Remodeling project presentations: methods                      |                     | Remodeling methods |
