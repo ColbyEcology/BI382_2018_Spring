@@ -1,0 +1,120 @@
+---
+title: "LabExperiment2"
+output: html_document
+date: "16 April 2018"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Lab Experiment 2: Prey-Predator Simulation in Virtual Reality
+
+## Background
+Predator-prey dynamics describe, on the population level, how flows of matter and energy move through ecological communities and ecosystems. At the most rudimentry level, we can study the interactions between a single population of prey and a single population of predators. Studying single populations of prey and predators—even modeling their dynamics using the simplest of assumptions—has value for describing and predicting natural population behavior. From the simplest assumptions made in the first descrptions of prey and predator dynamics, ecologists have added increasing realism to these models. This includes different types of growth functions of prey, density-dependence in predators, and different predator and prey behavioral interactions.
+
+For the Prey-Predator Simulation in Virtual Reality lab (AKA, thanks to Julia Saul, "Pigmemberment"), you became a predator of prey. The purpose of this is for you to forage for prey items, then see what model of your interactions with prey best fits your data. There are three types of interactions that I'd like you to distinguish:
+
+1. You consume prey (linearly) proportional to their density
+2. The time to process each animal is large relative to the dynamics of the prey (e.g., prey can reproduce faster than you can consume one prey item)
+3. Same as 2., but at low densities, prey are more cryptic and therefore more difficult to find
+
+These interactions between prey and predators are commonly referred to as **functional response**s. That is, functional responses describe the functional relatiohsip or interaction between prey and predator. As I describe the functions below, they would be a part of the prey-predator model as $f(V)$ follows:
+
+$$\begin{aligned}
+\frac{dV}{dt} &= rV - Pf(V)\\
+\frac{dP}{dt} &= Pf(V) - mP
+\end{aligned}$$
+
+### Type I Functional Response
+The first functional response of lineary proportionality is referred to as a Type I functional response. This simple term describes linear predation rate as a function of prey density:
+
+```{r echo = F, fig.width = 4, fig.height = 4}
+par(mar = c(2, 2, 0.1, 0.1))
+plot(x = NA, xlim = c(0, 1), ylim = c(0, 0.75), xaxt = "n", yaxt = "n", xlab = "", ylab = "")
+segments(x0 = -1, x1 = 2, y0 = 0, y1 = 0)
+segments(y0 = -1, y1 = 2, x0 = 0, x1 = 0)
+segments(x0 = 1/3, x1 = 1/3, y0 = 1/6, y1 = 1/3, col = "grey50", lty = 2, lwd = 0.75)
+segments(x0 = 1/3, x1 = 1/3+1/3, y0 = 1/3, y1 = 1/3, col = "grey50", lty = 2, lwd = 0.75)
+points(x = 1/3, y = 1/6, cex = 1.25)
+points(x = 4/6, y = 1/3, cex = 1.25)
+text(x = 1/3, y = 1/6, labels = bquote((x[0]~","~y[0])), adj = c(-.3, 1), cex = 0.75)
+text(x = 4/6, y = 1/3, labels = bquote((x[1]~","~y[1])), adj = c(-.3, 1), cex = 0.75)
+text(x = 3/6, y = 2.5/6, labels = bquote(frac(y[1] - y[0],x[1] - x[0])==beta))
+axis(side = 1, at = 0)
+axis(side = 2, at = 0, las = 1)
+mtext(side = 1, text = "Prey density")
+mtext(side = 2, text = "Predation rate")
+segments(x0 = 0, x1 = 2, y0 = 0, y1 = 1, col = "red", lwd = 3)
+```
+
+We model this as $f(V) = \beta V$ with $\beta$ being a proportionality constant and $V$ being prey.
+
+### Type II Functional Response
+The second functional response is called a Type II functional response, and its generally a saturating function. It can be described from first principles and is a common function used in other fields, such as chemistiry to describe enzyme kenetics when a subtrate takes longer to process a molecule relative to its encounter rate (known as Michaelis-Menten kinetics). I will cover the derivation of the equation in class. This function is saturating in the sense that it looks like this:
+
+```{r echo = F, fig.width = 4, fig.height = 4}
+par(mar = c(2, 2, 2, 2))
+plot(x = NA, xlim = c(0, 1), ylim = c(0, 1), xaxt = "n", yaxt = "n", xlab = "", ylab = "")
+segments(x0 = -1, x1 = 2, y0 = 0, y1 = 0)
+segments(y0 = -1, y1 = 2, x0 = 0, x1 = 0)
+axis(side = 1, at = 0)
+axis(side = 2, at = 0, las = 1)
+mtext(side = 1, text = "Prey density")
+mtext(side = 2, text = "Predation rate")
+beta <- 0.8
+gamma <- 1/10
+segments(x0 = -1, x1 = 2, y0 = beta, y1 = beta, col = "grey50", lty = 2, lwd = 0.75)
+axis(side = 2, at = beta, las = 1, labels = bquote(beta))
+segments(x0 = gamma, x1 = gamma, y0 = -1, y1 = 2, col = "grey50", lty = 2, lwd = 0.75)
+axis(side = 1, at = gamma, labels = bquote(gamma))
+segments(x0 = -1, x1 = 2, y0 = beta/2, y1 = beta/2, col = "grey50", lty = 2, lwd = 0.75)
+axis(side = 4, at = beta/2, labels = bquote(frac(beta ,2)), las = 1)
+x <- seq(from = 0, to = 2, by = 0.01)
+fx <- beta*x/(gamma + x)
+lines(x = x, y = fx, lwd = 3, col = "red")
+```
+
+We model this saturating functional response as $f(V) = \frac{\beta V}{\gamma + V}$. Each of these two parameters is graphically interpretable. First, $\beta$, is the maximum predation rate. You can imagine many reasons why this would occur. Might might be because predators become satiated. Nevertheless, we can build this function into our prey-predator models and it has this relatively straight-forward interpretation. The second parameter, $\gamma$ describes the convexity (or steepness) of the curve. Colloquially, it's referred to as the half-saturation constant because it corresponds to where the one-half saturation point will be. Examine the graph above and think about how increasing or decrasing $\gamma$ would change the shape of the curve.
+
+### Type III Functional Response
+Finally, a Type III functional response is *very* similar to the Type II. In common, there is a saturation point in the predation rate $(\beta)$ and half-saturation point $(\gamma)$. The ecological difference is that the Type III builds in low predation rates at low prey densities, exemplified as sigmoidal-shaped curve below:
+
+```{r echo = F, fig.width = 4, fig.height = 4}
+par(mar = c(2, 2, 2, 2))
+plot(x = NA, xlim = c(0, 1), ylim = c(0, 1), xaxt = "n", yaxt = "n", xlab = "", ylab = "")
+segments(x0 = -1, x1 = 2, y0 = 0, y1 = 0)
+segments(y0 = -1, y1 = 2, x0 = 0, x1 = 0)
+axis(side = 1, at = 0)
+axis(side = 2, at = 0, las = 1)
+mtext(side = 1, text = "Prey density")
+mtext(side = 2, text = "Predation rate")
+beta <- 0.8
+gamma <- 1/5
+segments(x0 = -1, x1 = 2, y0 = beta, y1 = beta, col = "grey50", lty = 2, lwd = 0.75)
+axis(side = 2, at = beta, las = 1, labels = bquote(beta))
+segments(x0 = gamma, x1 = gamma, y0 = -1, y1 = 2, col = "grey50", lty = 2, lwd = 0.75)
+axis(side = 1, at = gamma, labels = bquote(gamma))
+segments(x0 = -1, x1 = 2, y0 = beta/2, y1 = beta/2, col = "grey50", lty = 2, lwd = 0.75)
+axis(side = 4, at = beta/2, labels = bquote(frac(beta ,2)), las = 1)
+x <- seq(from = 0, to = 2, by = 0.01)
+fx <- beta*x^2/(gamma^2 + x^2)
+lines(x = x, y = fx, lwd = 3, col = "red")
+```
+
+For a variety of reasons this model has biological realism in which ecologists are often interested. Mathematically, the terms are all rasied to a power > 1. The relatioship snown takes the form: $f(V) = \frac{\beta V^2}{\gamma^2 + V^2}$. This is phenomenolgical in some ways, in that it produces the biological behavior that we want, but the exponents that are > 1 are modified and are not derived from primary principles.
+
+### The Anatomy of Other Common Ecological Functions
+Pretty much the closest thing I've ever had to going "viral" was liked/shared a couple hundred times. It was this cheat sheet of common evological functions that I ripped from Ben Bolker's book, "Ecological Models and Data in R." It's beautiful, concies and a very handy tool that I thought that I'd share with you, for you to keep as a reference:
+
+[Link to common ecological functions](../Misc/EcoFun_onepage.pdf)
+
+## Assignment
+For this lab, I'd like for you to fit each of these models to your data, assess their fits, then project the dynamics that you'd expect with both the populations pigs and yous. I present the steps I'd like for you to take, below:
+
+1. **Load up your data**. Because some of the data are messy, we're again skipping the nonlinear model fitting routines and simply fitting by eye. Download the class data from the course website. Upzip it, place your data in a location where it can be easily retrieved, and load it up using `read.csv()`.
+2. **Inspect your data**. Look at the data, and see with what you're working. There should be three columns: one that describes when a pig was caught, one that describes when you were done consuming it, and one that has the density of pigs when caught. Rename these to something that is easy to type and something that is easy for you to remember. If you use the function `names()` and assign it a vector of three character strings (e.g., `c("Capt", "Cons", "Dens")`), that will write over the names.
+3. **Plot your data**. Now, let's get our data in the form that we need to examine the functional response, with prey density on the horizontal axis and predation rate on the vertical axis. We already have the density varaible, so we need to now calcualte predation rate. A way to do this is to find the time between when you were done consuming the pig and when you captured the new one. Think about what you want to do, write it down, then do it in R (jumping in to R too fast can sometimes be distracting and more difficult to solve problems). After you have the time between when you started searching and when you captured the next pig, put that in the demoninator and 1 in the numerator to make it a rate (per second). Your new vector should be the same length as the number of rows. After you've calculated the predation rate, plot that against density.
+4. **Fit your data to a model**. Visually fit the each of the functional responses to your data. Manually change the parameter values, and let $V$ in the functions in the previous section be the pig density from your dataset. Make a plot for each, first plotting the function with parameter values that you've selected, then adding your data points (using the funtion `points()`). Create a table in R Markdown (see the guide I wrote in the Resources tab) with each functional response as rows, and the parameter values as columns.
+5. **Contrast your visual to your model's estimate**.Determine how long it took For the Type II functional response, that incorporated a maximum capture rate and the amount of time it took for you to process the animal (referred to as "handling time"). Let's see how close your visual estimate using the model was to the observed data. Subract the time at which a prey was captured from when it was consumed. Make a `boxplot()` to look at the distribution of times it took you to dismember/handle the pig. Also, calculate and report the `mean()` of the times. Next, multiply one over both your estimate of the maximum predation rate times the half saturation constant. How close is this value from the mean?
+6. **Use a routine to fit models to you data**. (Optional) For those of you that are daring (most of your data I was albe to fit), you can try using nonlinear least squares (function `nls()`) to estimate your parameters. The two arguments that are important are (1) `formula = ` and (2) `start = `. For the `formula = ` agrument, you give it your data and emptpy parameters. For example, `df$rate ~ a*df$dens / (b + df$dens)`. For the `start = ` argument, give it a list with suggested starting values from 4. E.g., `start = list(a = 0.1, b = 15)`. Virually all errors you will get is because you are too far off from the "true" parameter values. Try changing them to get them to fir. Some were impossible for me to fit. The output, if successful, will show the parameter values. If you want a set of data that is relatively clean and easy to fit, try Julia Park's dataset and fit a Type II functional response to her data.
