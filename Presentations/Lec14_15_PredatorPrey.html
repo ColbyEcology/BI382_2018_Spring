@@ -565,13 +565,277 @@ N^*_2 &amp;= \frac{r_2}{\alpha _2}
 &lt;/video&gt;
 
 
-&lt;!-- --- --&gt;
-&lt;!-- # Consumer-resource --&gt;
-&lt;!-- The model --&gt;
-&lt;!-- $$\begin{aligned} --&gt;
-&lt;!-- \frac{dN_1}{dt} &amp;= r_1N_1 - \alpha _1N_1^2 - \beta _1N_1N_2\\ --&gt;
-&lt;!-- \frac{dN_2}{dt} &amp;= r_2N_2 - \alpha _2N_2^2 + \beta_21N_1N_2 --&gt;
-&lt;!-- \end{aligned}$$ --&gt;
+---
+# Consumer-resource, both logistic
+The model with both species growing logisitcally, but with one species benefiting at the other's expence (say, a consumer-resource interaction)
+
+`$$\begin{aligned}
+\frac{dN_1}{dt} &amp;= r_1N_1 - \alpha _1N_1^2 - \beta _1N_1N_2\\
+\frac{dN_2}{dt} &amp;= r_2N_2 - \alpha _2N_2^2 + \beta_21N_1N_2
+\end{aligned}$$`
+
+---
+# Consumer-resource, both logistic
+The model
+`$$\begin{aligned}
+\frac{dN_1}{dt} &amp;= r_1N_1 - \alpha _1N_1^2 - \beta _1N_1N_2\\
+\frac{dN_2}{dt} &amp;= r_2N_2 - \alpha _2N_2^2 + \beta_21N_1N_2
+\end{aligned}$$`
+
+--
+
+Setting each subequation to 0
+`$$\begin{aligned}
+0 &amp;= r_1N_1 - \alpha _1N_1^2 - \beta _1N_1N_2 \\
+0 &amp;= r_2N_2 - \alpha _2N_2^2 + \beta_21N_1N_2
+\end{aligned}$$`
+
+--
+
+.pull-left[
+For `\(N_1\)`
+`$$\begin{aligned}
+N^*_1 &amp;= 0 \\
+N^*_1 &amp;= \frac{r_1 - \beta _1N_2}{\alpha _1}
+\end{aligned}$$`
+]
+
+--
+
+.pull-right[
+For `\(N_2\)`
+`$$\begin{aligned}
+N^*_2 &amp;= 0 \\
+N^*_2 &amp;= \frac{r_2 + \beta _2N_1}{\alpha _2}
+\end{aligned}$$`
+]
+
+---
+# Consumer-resource, both logistic
+If we were to plot these on a graph, with red lines being the nullclines for `\(N_1\)` and the blue lines being the nullclines for `\(N_2\)`, then we'd draw something like this:
+
+![](Lec14_15_PredatorPrey_files/figure-html/unnamed-chunk-27-1.png)&lt;!-- --&gt;
+
+---
+# Consumer-resource, both logistic
+The model, initial densities, and parameter values
+
+```r
+cr.log &lt;- function(t, y, parameters) {
+  N1 &lt;- y[1]
+  N2 &lt;- y[2]
+  r1 &lt;- parameters[1]
+  r2 &lt;- parameters[2]
+  a1 &lt;- parameters[3]
+  a2 &lt;- parameters[4]
+  b1 &lt;- parameters[5]
+  b2 &lt;- parameters[6]
+  dN1 &lt;- r1*N1 - a1*N1^2 - b1*N1*N2
+  dN2 &lt;- r2*N2 - a2*N2^2 + b2*N2*N1
+  return(list(c(dN1, dN2)))
+}
+
+init &lt;- c(N1 = 0.1, N2 = 0.05)
+parm.vals &lt;- c(r1 = 2/3, r2 = 2/3, a1 = 1, a2 = 1, b1 = 0.2, b2 = 0.2)
+```
+
+---
+# Consumer-resource, both logistic
+The phase plane
+
+![](Lec14_15_PredatorPrey_files/figure-html/unnamed-chunk-29-1.png)&lt;!-- --&gt;
+
+---
+# Consumer-resource, both logistic
+
+
+&lt;video width="800" height="400" controls loop&gt;
+  &lt;source src="Lec14_15_PredatorPrey_files/CRLog.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+
+---
+# C-R/L-V, R ex. growth and C cons. mort
+This is the Lotka-Volterra predator-prey model:
+
+`$$\begin{aligned}
+\frac{dR}{dt} &amp;= rR - \beta RC\\
+\frac{dC}{dt} &amp;= \gamma RC - \delta C
+\end{aligned}$$`
+
+---
+# C-R/L-V, R ex. growth and C cons. mort
+The model
+`$$\begin{aligned}
+F_1 = \frac{dR}{dt} &amp;= rR - \beta RC\\
+F_2 = \frac{dC}{dt} &amp;= \gamma RC - \delta C
+\end{aligned}$$`
+
+--
+
+Setting each subequation to 0
+`$$\begin{aligned}
+F_1 = 0 &amp;= rR - \beta RC\\
+F_2 = 0 &amp;= \gamma RC - \delta C
+\end{aligned}$$`
+
+--
+
+.pull-left[
+For `\(F_1\)`
+`$$\begin{aligned}
+R^* &amp;= 0 \\
+C^* &amp;= \frac{r}{\beta}
+\end{aligned}$$`
+]
+
+--
+
+.pull-right[
+For `\(F_2\)`
+`$$\begin{aligned}
+C^* &amp;= 0 \\
+R^* &amp;= \frac{\delta}{\gamma}
+\end{aligned}$$`
+]
+
+---
+# C-R/L-V, R ex. growth and C cons. mort
+If we were to plot these on a graph, with red lines being the nullclines for `\(R\)` and the blue lines being the nullclines for `\(C\)`, then we'd draw something like this:
+
+
+.pull-left[
+![](Lec14_15_PredatorPrey_files/figure-html/unnamed-chunk-30-1.png)&lt;!-- --&gt;
+]
+
+--
+
+.pull-right[
+![](Lec14_15_PredatorPrey_files/figure-html/unnamed-chunk-31-1.png)&lt;!-- --&gt;
+]
+
+---
+# C-R/L-V, R ex. growth and C cons. mort
+The model, initial densities, and parameter values
+
+```r
+cr.LV &lt;- function(t, y, parameters) {
+  R &lt;- y[1]
+  C &lt;- y[2]
+  r &lt;- parameters[1]
+  a &lt;- parameters[2]
+  b &lt;- parameters[3]
+  m &lt;- parameters[4]
+  dR &lt;- r*R - a*R*C
+  dC &lt;- b*R*C - m*C
+  return(list(c(dR, dC)))
+}
+
+init &lt;- c(0.3, 0.5)
+parm.vals &lt;- c(r = 0.5, a = 0.5, b = 0.25, m = 0.5)
+```
+
+---
+# C-R/L-V, R ex. growth and C cons. mort
+The phase plane
+
+![](Lec14_15_PredatorPrey_files/figure-html/unnamed-chunk-33-1.png)&lt;!-- --&gt;
+
+---
+# C-R/L-V, R ex. growth and C cons. mort
+
+
+&lt;video width="800" height="400" controls loop&gt;
+  &lt;source src="Lec14_15_PredatorPrey_files/CRLV.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+
+---
+class: inverse, center
+background-image: url(http://www2.nau.edu/lrm22/lessons/predator_prey/hare_lynx_graph.png)
+background-size: contain
+
+# Snowshoe hare-lynx data from the Hudson Bay Trapping Company
+
+---
+# C-R, R log. growth and C cons. mort.
+This is the Lotka-Volterra predator-prey model with generalist prey:
+
+`$$\begin{aligned}
+\frac{dR}{dt} &amp;= rR - \alpha R^2 - \beta RC\\
+\frac{dC}{dt} &amp;= \gamma RC - \delta C
+\end{aligned}$$`
+
+---
+# C-R, R log. growth and C cons. mort.
+The model
+`$$\begin{aligned}
+F_1 = \frac{dR}{dt} &amp;= rR - \alpha R^2 - \beta RC\\
+F_2 = \frac{dC}{dt} &amp;= \gamma RC - \delta C
+\end{aligned}$$`
+
+--
+
+Setting each subequation to 0
+`$$\begin{aligned}
+F_1 = 0 &amp;= rR - \alpha R^2 - \beta RC\\
+F_2 = 0 &amp;= \gamma RC - \delta C
+\end{aligned}$$`
+
+--
+
+.pull-left[
+For `\(F_1\)`
+`$$\begin{aligned}
+R &amp;= 0 \\
+R &amp;= \frac{r - \beta C}{\alpha}
+\end{aligned}$$`
+]
+
+--
+
+.pull-right[
+For `\(F_2\)`
+`$$\begin{aligned}
+C &amp;= 0 \\
+R &amp;= \frac{\delta}{\gamma}
+\end{aligned}$$`
+]
+
+
+---
+# C-R, R log. growth and C cons. mort.
+The model, initial densities, and parameter values
+
+```r
+cr.LVDD &lt;- function(t, y, parameters) {
+  R &lt;- y[1]
+  C &lt;- y[2]
+  r &lt;- parameters[1]
+  alpha &lt;- parameters[2]
+  a &lt;- parameters[3]
+  b &lt;- parameters[4]
+  m &lt;- parameters[5]
+  dR &lt;- r*R - alpha*R*R - a*R*C
+  dC &lt;- b*R*C - m*C
+  return(list(c(dR, dC)))
+}
+
+init &lt;- c(0.3, 0.5)
+parm.vals &lt;- c(r = 0.5, alpha = 0.2, a = 0.25, b = 0.25, m = 0.4)
+```
+
+---
+# C-R, R log. growth and C cons. mort.
+The phase plane
+
+![](Lec14_15_PredatorPrey_files/figure-html/unnamed-chunk-35-1.png)&lt;!-- --&gt;
+
+---
+# C-R, R log. growth and C cons. mort.
+
+
+&lt;video width="800" height="400" controls loop&gt;
+  &lt;source src="Lec14_15_PredatorPrey_files/CRLVDD.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
