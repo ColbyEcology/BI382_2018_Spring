@@ -48,7 +48,7 @@ Week |  Date  | Meeting |     Topic                                             
      |        | Lecture | Disease ecology		           	                             | VG: ch.7            | [Notebook 7](../Assignments/LectureNotebooks/Ch7_Notebook) | [Disease Dyn.](../Presentations/Lec16_17_Disease.html){:target="_blank"}
 09   | 16 Apr |   Lab   | Parameter estimation in R: maximum likelihood                  |                     |  [Lab experiment 2](../Assignments/LabExperiments/Experiment2/LabExperiment2.html){:target="_blank"} |
      |        | Lecture | Competition  				                                     | VG: ch.8, pp. 198–209 | <span style="color:#788bbb">Notebook 8</span> |
-10   | 23 Apr |   Lab   | Remodeling project presentations: methods                      |                     | Remodeling methods |
+10   | 23 Apr |   Lab   | Remodeling project presentations: methods                      |                     | [Remodeling Project, Part III](../Assignments/RemodelingProject/RemodelingProject_Methods.html){:target="_blank"} |
      |        | Lecture | Facilitation and mutualism                                     | VG: ch.9            | <span style="color:#788bbb">Notebook 9</span> |
 11   | 30 Apr |   Lab   | Remodeling project: analysis                                   |                     | |
      |        | Lecture | Webs and networks                        		                 | Bascompte & Jordano 2014, and McCann 2012              | <span style="color:#788bbb">Notebook 10</span> |
