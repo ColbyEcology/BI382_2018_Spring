@@ -196,7 +196,7 @@ With vital rates, where `\(\mu\)` is the birth rate and `\(\nu\)` is the death r
 
 `$$\begin{aligned}
 \frac{dS}{dt} &amp;= \mu N -\frac{\beta SI}{N} - \nu S \\
-\frac{dI}{dt} &amp;= \beta SI- \nu I
+\frac{dI}{dt} &amp;= \frac{\beta SI}{N}- \nu I
 \end{aligned}$$`
 
 --
@@ -205,13 +205,13 @@ Notice that the death rate is the same for susceptibles and infecteds. We could 
 
 `$$\begin{aligned}
 \frac{dS}{dt} &amp;= \mu N -\frac{\beta SI}{N} - \nu S \\
-\frac{dI}{dt} &amp;= \beta SI- \gamma I
+\frac{dI}{dt} &amp;= \frac{\beta SI}{N}- \gamma I
 \end{aligned}$$`
 
 ---
 # Susceptible-infected-recovered (SIR) model
 
-We now add a state variable for a portion of the population who has **r**covered from being infected.
+We now add a state variable for a portion of the population who has **r**ecovered from being infected.
 
 --
 
@@ -230,15 +230,21 @@ We also need to add a parameter for the rate of recovery; let's say `\(v\)`.
 # Susceptible-infected-recovered (SIR) model
 Vandermeer and Goldberg describe the significance of the relationship between the two important paramters, recovery and transmission rates, `\(v\)` and `\(\beta\)`, respectively.
 
+--
+
 From the SI model, `\(\frac{v}{\beta}\)` was a critical ratio that determined wether the equilibrium for infecteds will be 0 or 1.
+
+--
 
 In the SIR model, the `\(I\)` derivative can be arranged algebraically where `\(\frac{\beta}{v}\)` acts as a threshold as to wether the infected portion will increase or decline. It's realted to `\(R_0\)`, a universal parameter known as the **the basic reproductive ratio** defined as *the average number of secondary infected cases  arising from an average primary case in an entirely susceptible population*. In other words, it's the rate of infection per recovery rate.
 
-Create a time series for an SIR model with `\(R_0 &lt; 1\)`, `\(R_0 = 1\)`, and `\(R_0 &gt; 1\)`. Pretend the suscetible population is Colby (roughly 2000 people on campus) and one person returns from winter break with a pathogen that is transmitted with a probability of 0.5. Create a time series to show how the infected Mules change over time for recovery rates both of 0.1 and 0.5. What and when are the peaks (maximim `\(I\)`) for each?
+--
+
+Create a time series for an SIR model. Pretend the suscetible population is Colby (roughly 2000 people on campus) and one person returns from winter break with a pathogen that is transmitted with a probability of 0.5. Create a time series to show how the infected Mules change over time for recovery rates both of 0.1 and 0.5. What and when are the peaks (maximim `\(I\)`) for each?
 
 ---
 # Susceptible-infected-recovered (SIR) model
-`\(I\)` is the red line and `\(v = 0.5\)`:
+`\(I\)` is the red line and `\(v = 0.1\)`:
 ![](Lec16_17_Disease_files/figure-html/unnamed-chunk-2-1.png)&lt;!-- --&gt;
 
 
@@ -265,13 +271,23 @@ SIR.out[,1][which(SIR.out[,3] == max(SIR.out[,3]))] # Days
 
 ---
 # Susceptible-infected-recovered (SIR) model
-`\(\frac{\beta}{v} &gt; 1\)`
+### `\(\frac{\beta}{v} &gt; 1\)`
+
 ![](Lec16_17_Disease_files/figure-html/unnamed-chunk-6-1.png)&lt;!-- --&gt;
 
 ---
 # Susceptible-infected-recovered (SIR) model
-`\(\frac{\beta}{v} &lt; 1\)`
+### `\(\frac{\beta}{v} &lt; 1\)`
+
 ![](Lec16_17_Disease_files/figure-html/unnamed-chunk-7-1.png)&lt;!-- --&gt;
+
+---
+# Susceptible-infected-recovered (SIR) model
+
+
+&lt;video width="500" height="500" controls="controls" loop&gt;
+  &lt;source src="Lec16_17_Disease_files/SIR.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
