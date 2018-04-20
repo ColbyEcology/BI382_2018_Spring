@@ -4,7 +4,7 @@ layout: assignment
 ---
 
 # Exercises based on Vandermeer and Goldberg
-**Due 24 April 2018**
+**Due 23 April 2018**
 
 For the lecture notebook this week, I ask that you analyze two two-species models of competition. The two models are the $K$ model and the $r-\alpha$ model:
 
