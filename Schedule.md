@@ -53,5 +53,5 @@ Week |  Date  | Meeting |     Topic                                             
 11   | 30 Apr |   Lab   | Remodeling project: analysis                                   |                     | |
      |        | Lecture | Webs and networks                        		                 | Bascompte & Jordano 2014, and McCann 2012              | <span style="color:#788bbb">Notebook 10</span> |
 12   | 07 May |   Lab   | Remodeling project: analysis                                   |                     | |
-     |        | Lecture | Remodeling project presentations: Results                      |                     | Remodeling presentation |
+     |        | Lecture | Remodeling project presentations: Results                      |                     | [Remodeling Project, Part IV](../Assignments/RemodelingProject/RemodelingProject_Results.html){:target="_blank"} |
 Exam | 16 May |         | Remodeling project: final paper due before 6:00 PM             |                     | Remodeling final paper |
