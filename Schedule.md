@@ -49,7 +49,7 @@ Week |  Date  | Meeting |     Topic                                             
 09   | 16 Apr |   Lab   | Parameter estimation in R: maximum likelihood                  |                     |  [Lab experiment 2](../Assignments/LabExperiments/Experiment2/LabExperiment2.html){:target="_blank"} |
      |        | Lecture | Competition  				                                     | VG: ch.8, pp. 198–209 | [Notebook 8](../Assignments/LectureNotebooks/Ch8_Notebook), | [Comp](../Presentations/Lec18_19_Competition){:target="_blank"}, [Mumps model](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5800133/pdf/ijerph-15-00033.pdf)
 10   | 23 Apr |   Lab   | Remodeling project presentations: methods                      |                     | [Remodeling Project, Part III](../Assignments/RemodelingProject/RemodelingProject_Methods.html){:target="_blank"} |
-     |        | Lecture | Facilitation and mutualism                                     | VG: ch.9            | [Notebook 9](../Assignments/LectureNotebooks/Ch9_Notebook), [Key](../Assignments/LectureNotebooks/Ch9_Notebook_key.html){:target="_blank"} |
+     |        | Lecture | Facilitation and mutualism                                     | VG: ch.9            | [Notebook 9](../Assignments/LectureNotebooks/Ch9_Notebook) |
 11   | 30 Apr |   Lab   | Remodeling project: analysis                                   |                     | |
      |        | Lecture | Webs and networks                        		                 | Bascompte & Jordano 2014, and McCann 2012              | <span style="color:#788bbb">Notebook 10</span> |
 12   | 07 May |   Lab   | Remodeling project: analysis                                   |                     | |
